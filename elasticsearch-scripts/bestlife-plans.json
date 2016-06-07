@@ -1,0 +1,2693 @@
+[	
+{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "74819AK0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/AK/2016/AK_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "12538AL0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/AL/2016/AL_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26904AR0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/AR/2016/AR_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "77352AZ0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/AZ/2016/AZ_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "95051DC0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/DC/2016/DC_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "95051DC0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/DC/2016/DC_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "95051DC0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/DC/2016/DC_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "95051DC0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/DC/2016/DC_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83502GA0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/GA/2016/GA_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "10046HI0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/HI/2016/HI_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0020005"
+	, "marketing_name": "BESTOne Dental Plus - Silver"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71051IA0020006"
+	, "marketing_name": "BESTOne Dental Basic - Silver"
+	, "summary_url": "http://www.bestlife.com/IA/2016/IA_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "17859ID0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/ID/2016/ID_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "84033IL0020001"
+	, "marketing_name": "BESTOne Dental Plus-Silver"
+	, "summary_url": "http://www.bestlife.com/IL/2016/IL_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "83557IN0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/IN/2016/IN_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "https://www.bestlife.com/KS/2016/KS_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/KS/2016/KS_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/KS/2016/KS_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/KS/2016/KS_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "63790KS0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/KS/2016/KS_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "86825KY0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/KY/2016/KY_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0020003"
+	, "marketing_name": "BESTOne Dental Advantage - Gold"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0020004"
+	, "marketing_name": "BESTOne Dental Plus - Gold"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "78461LA0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/LA/2016/LA_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010037"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010038"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010039"
+	, "marketing_name": "BEST Dental Standard-L"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010040"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010041"
+	, "marketing_name": "BEST Dental Choice-L"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0010042"
+	, "marketing_name": "BEST Dental Value"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "35700MI0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/MI/2016/MI_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "29416MO0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/MO/2016/MO_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "11324MS0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/MS/2016/MS_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "93895MT0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/MT/2016/MT_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "94482NC0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/NC/2016/NC_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75329ND0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/ND/2016/ND_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "50022NE0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/NE/2016/NE_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "26075NM0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/NM/2016/NM_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "75719NV0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/NV/2016/NV_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47509OH0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/OH/2016/OH_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "40254OK0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/OK/2016/OK_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "71933PA0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/PA/2016/PA_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "89281SC0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/SC/2016/SC_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTOne_Dental_Advantage-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTOne_Dental_Plus-Gold_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTOne_Dental_Plus-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "61214SD0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/SD/2016/SD_BESTOne_Dental_Basic-Silver_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "24601TN0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/TN/2016/TN_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47665TX0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/TX/2016/TX_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "42757UT0020003"
+	, "marketing_name": "BESTOne Advantage High"
+	, "summary_url": "http://www.bestlife.com/UT/2016/UT_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "42757UT0020004"
+	, "marketing_name": "BESTOne Plus High"
+	, "summary_url": "http://www.bestlife.com/UT/2016/UT_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "42757UT0020005"
+	, "marketing_name": "BESTOne Plus"
+	, "summary_url": "http://www.bestlife.com/UT/2016/UT_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "42757UT0020006"
+	, "marketing_name": "BESTOne Basic"
+	, "summary_url": "http://www.bestlife.com/UT/2016/UT_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010007"
+	, "marketing_name": "BESTDental Premium"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Premium_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010008"
+	, "marketing_name": "BESTDental Standard - H"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Standard-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010009"
+	, "marketing_name": "BESTDental Standard - L"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Standard-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010010"
+	, "marketing_name": "BESTDental Choice - H"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Choice-H_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010011"
+	, "marketing_name": "BESTDental Choice - L"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Choice-L_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0010012"
+	, "marketing_name": "BESTDental Value"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTDental_Value_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0020003"
+	, "marketing_name": "BESTOne Advantage Gold"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTOne_Dental_Advantage-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0020004"
+	, "marketing_name": "BESTOne Plus Gold"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTOne_Dental_Plus-High_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0020005"
+	, "marketing_name": "BESTOne Plus Silver"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTOne_Dental_Plus-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+	,{"plan_id_type": "HIOS-PLAN-ID"
+	, "plan_id": "47731WY0020006"
+	, "marketing_name": "BESTOne Basic Silver"
+	, "summary_url": "http://www.bestlife.com/WY/2016/WY_BESTOne_Dental_Basic-Low_Plan.pdf"
+	, "plan_contact": "ppeatross@bestlife.com"
+	, "network": [{"network_tier": "IN-NETWORK"}]
+	, "formulary": []
+	, "last_updated_on": "2016-06-06"
+	}
+]

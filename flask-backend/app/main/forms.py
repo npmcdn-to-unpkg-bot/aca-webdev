@@ -4,5 +4,5 @@ from wtforms.validators import Required
 
 
 class InputForm(Form):
-    name = StringField('Which plan are you looking for?')
+    query = StringField('Which plan are you looking for?', validators =[ Required()])
     submit = SubmitField('Submit')

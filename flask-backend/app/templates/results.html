@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Obamacare Comparison Tool{% endblock %}
+
+{% block navbar %}{% endblock %}
+
+{% block page_content %}
+
+<h1>List of Obamacare Plans</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Plan</th>
+      <th>ID</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  {% for letter in query %}
+    <tr>
+      <td>A</td>
+      <td>123</td>
+      <td>{{ letter }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
