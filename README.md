@@ -1,4 +1,7 @@
 # Backend and Frontend of ACA Capstone Project
 
-To install conda environment (aca-flask): conda env create -f environment.yml
+#### Components
+- Flask backend (python web server)
+- React frontend (single page app)
+- Elasticsearch scripts (loading data)
 
