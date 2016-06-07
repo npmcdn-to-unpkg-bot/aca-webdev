@@ -1,6 +1,7 @@
 from flask import render_template, session, redirect, url_for, current_app
 from . import main
 from .forms import InputForm
+from .elastic import get_best_plans
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
@@ -12,5 +13,5 @@ def index():
 
 @main.route('/results')
 def results():
-    letters = list(session['query'])
-    return render_template('results.html', query=letters)
+    es_results = get_best_plans(session['query'])
+    return render_template('results.html', es_results=es_results)

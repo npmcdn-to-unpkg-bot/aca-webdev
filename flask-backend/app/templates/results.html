@@ -11,17 +11,19 @@
   <thead>
     <tr>
       <th>Plan</th>
-      <th>ID</th>
-      <th>Website</th>
+      <th>Plan ID Type</th>
+      <th>Plan ID</th>
     </tr>
   </thead>
 
   <tbody>
-  {% for letter in query %}
+  {% for hit in es_results %}
     <tr>
-      <td>A</td>
-      <td>123</td>
-      <td>{{ letter }}</td>
+      <td>
+        <a href={{hit.summary_url}}>{{ hit.marketing_name }}</a>
+      </td>
+      <td>{{ hit.plan_id_type }}</td>
+      <td>{{ hit.plan_id }}</td>
     </tr>
   {% endfor %}
   </tbody>
