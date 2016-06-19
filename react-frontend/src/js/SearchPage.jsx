@@ -13,7 +13,7 @@ import {
 
 require("./index.scss");
 
-const host = "http://demo.searchkit.co/api/movies"
+const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
 // searchkit.addDefaultQuery((query)=> {
@@ -22,43 +22,31 @@ const searchkit = new SearchkitManager(host)
 // 	 )
 //  })
 
-// const MovieHitsGridItem = (props)=> {
-// 	console.log(props);
-//   const {bemBlocks, result} = props
-//   let url = "http://www.imdb.com/title/" + result._source.imdbId
-//   const source:any = _.extend({}, result._source, result.highlight)
-//   return (
-//     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
-//       <a href={url} target="_blank">
-//         <img data-qa="poster" className={bemBlocks.item("poster")} src={result._source.poster} width="170" height="240"/>
-//         <div data-qa="title" className={bemBlocks.item("title")} dangerouslySetInnerHTML={{__html:source.title}}>
-//         </div>
-//       </a>
-//     </div>
-//   )
-// }
-
-const MovieHitsListItem = (props)=> {
-  const {bemBlocks, result} = props
-  let url = "http://www.imdb.com/title/" + result._source.imdbId
-  const { title, poster, writers = [], actors = [], genres = [], plot, released, rated } = result._source;
+const PlanHitsListItem = (props)=> {
+  const { bemBlocks, result } = props
+  const { plan_name, premium, level, url, providers = [] } = result._source;
 
   return (
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
+
       <div className={bemBlocks.item("poster")}>
-        <img data-qa="poster" src={result._source.poster}/>
+        <img data-qa="poster" src="http://glasshospital.com/wp-content/uploads/2015/03/1369238178_BlueShield4Web.png"/>
       </div>
+
       <div className={bemBlocks.item("details")}>
-        <a href={url} target="_blank"><h2 className={bemBlocks.item("title")}>{title}</h2></a>
-        <h3 className={bemBlocks.item("subtitle")}>Released in {released}, rated {rated}/10</h3>
+        <a href={url} target="_blank">
+					<h2 className={bemBlocks.item("plan_name")}>{plan_name}</h2>
+				</a>
+        <h3 className={bemBlocks.item("subtitle")}>
+					Plan Details:
+				</h3>
         <ul style={{ marginTop: 8, marginBottom: 8, listStyle: 'none', paddingLeft: 20 }}>
-          <li>Rating: {rated}		</li>
-					{/*<li>Writers:{writers}	</li>
-					<li>Actors: {actors}	</li>*/}
-          <li>Writers: <TagFilterList field="writers.raw" values={writers} /></li>
-          <li>Actors: <TagFilterList field="actors.raw" values={actors} /></li>
+          <li>Premium: {premium}</li>
+					<li>Level: {level}</li>
+          <li>Providers: <TagFilterList field="providers.raw" values={providers} /></li>
         </ul>
       </div>
+
     </div>
   )
 }
@@ -72,23 +60,22 @@ export class SearchPage extends React.Component {
 		        <SearchBox
 		          autofocus={true}
 		          searchOnChange={true}
-							placeholder="Search movies..."
-		          prefixQueryFields={["actors^1","type^2","languages","title^10"]}/>
+							placeholder="Search plans..."
+		          prefixQueryFields={["providers^1","level^2","plan_name^10"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
 							<MenuFilter
-								id="type"
-								title="Movie Type"
-								field="type.raw"
+								id="level"
+								title="Metal Level"
+								field="level.raw"
 								listComponent={ItemHistogramList}/>
 		          <RefinementListFilter
-		            id="actors"
-		            title="Actors"
-		            field="actors.raw"
+		            id="providers"
+		            title="Providers"
+		            field="providers.raw"
 		            operator="AND"
 		            size={10}/>
-							<TagFilterConfig id="writers" title="Writers" field="writers.raw" />
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
@@ -96,8 +83,8 @@ export class SearchPage extends React.Component {
 		              <HitsStats/>
 									<SortingSelector options={[
 										{label:"Relevance", field:"_score", order:"desc", defaultOption:true},
-										{label:"Latest Releases", field:"released", order:"desc"},
-										{label:"Earliest Releases", field:"released", order:"asc"}
+										{label:"Premium (High to Low)", field:"premium", order:"desc"},
+										{label:"Premium (Low to High)", field:"premium", order:"asc"}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>
@@ -105,7 +92,7 @@ export class SearchPage extends React.Component {
 		              <ResetFilters/>
 		            </ActionBarRow>
 		          </ActionBar>
-		          <Hits mod="sk-hits-list" hitsPerPage={10} itemComponent={MovieHitsListItem}/>
+		          <Hits mod="sk-hits-list" hitsPerPage={10} itemComponent={PlanHitsListItem}/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>
 		        </LayoutResults>
