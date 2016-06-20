@@ -13,5 +13,6 @@ def index():
 
 @main.route('/results')
 def results():
-    es_results = get_best_plans(session['query'])
-    return render_template('results.html', es_results=es_results)
+    # es_results = get_best_plans(session['query'])
+    query = session['query']
+    return render_template('results.html', query=query)

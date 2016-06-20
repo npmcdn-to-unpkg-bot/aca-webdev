@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Obamacare Comparison Tool{% endblock %}
+
+{% block navbar %}{% endblock %}
+
+{% block page_content %}
+
+<h1>List of Obamacare Plans</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Plan</th>
+      <th>Plan ID Type</th>
+      <th>Plan ID</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  {% for hit in es_results %}
+    <tr>
+      <td>
+        <a href={{hit.summary_url}}>{{ hit.marketing_name }}</a>
+      </td>
+      <td>{{ hit.plan_id_type }}</td>
+      <td>{{ hit.plan_id }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

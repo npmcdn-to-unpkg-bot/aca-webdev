@@ -1,32 +1,16 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Obamacare Comparison Tool{% endblock %}
+<head>
+  <meta charset="utf-8">
+  <title>React</title>
+  <link href="https://cdn.jsdelivr.net/searchkit/0.10.0/theme.css" rel="stylesheet" />
+</head>
 
-{% block navbar %}{% endblock %}
+<body>
+  <div id="app"></div>
+  <script>console.log("{{ query | safe }}");</script>
+  <script src="{{ url_for('static', filename='bundle.js') }}"></script>
+</body>
 
-{% block page_content %}
-
-<h1>List of Obamacare Plans</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Plan</th>
-      <th>Plan ID Type</th>
-      <th>Plan ID</th>
-    </tr>
-  </thead>
-
-  <tbody>
-  {% for hit in es_results %}
-    <tr>
-      <td>
-        <a href={{hit.summary_url}}>{{ hit.marketing_name }}</a>
-      </td>
-      <td>{{ hit.plan_id_type }}</td>
-      <td>{{ hit.plan_id }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-
-{% endblock %}
+</html>
