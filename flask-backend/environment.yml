@@ -21,6 +21,7 @@ dependencies:
   - dominate==2.2.0
   - elasticsearch==2.3.0
   - elasticsearch-dsl==2.0.0
+  - fake-factory==0.5.7
   - flask-bootstrap==3.3.5.7
   - flask-mail==0.9.1
   - flask-migrate==1.8.0
@@ -28,12 +29,15 @@ dependencies:
   - flask-script==2.0.5
   - flask-sqlalchemy==2.1
   - flask-wtf==0.12
+  - ipaddress==1.0.16
+  - jellyfish==0.5.1
   - mako==1.0.4
   - python-dateutil==2.5.3
   - python-editor==1.0
   - six==1.10.0
   - sqlalchemy==1.0.12
   - urllib3==1.15.1
+  - us==0.9.1
   - visitor==0.1.2
   - wtforms==2.1
 

@@ -7,48 +7,27 @@ import {
 	Hits, HitsStats, NoHits, Pagination, SortingSelector,
 	SelectedFilters, ResetFilters, ItemHistogramList,
 	Layout, LayoutBody, LayoutResults, TopBar,
-	SideBar, ActionBar, ActionBarRow, TagFilterList, TagFilterConfig,
-	TermQuery, FilteredQuery, BoolShould
+	SideBar, ActionBar, ActionBarRow, TermQuery, FilteredQuery, BoolMust
 } from "searchkit";
 
+import { PlanHitsListItem } from "./components";
 require("./index.scss");
 
 const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
-// searchkit.addDefaultQuery((query)=> {
-// 	 return query.addQuery(
-// 			 TermQuery("type", "movie")
-// 	 )
-//  })
-
-const PlanHitsListItem = (props)=> {
-  const { bemBlocks, result } = props
-  const { plan_name, premium, level, url, providers = [] } = result._source;
-
-  return (
-    <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
-
-      <div className={bemBlocks.item("poster")}>
-        <img data-qa="poster" src="http://glasshospital.com/wp-content/uploads/2015/03/1369238178_BlueShield4Web.png"/>
-      </div>
-
-      <div className={bemBlocks.item("details")}>
-        <a href={url} target="_blank">
-					<h2 className={bemBlocks.item("plan_name")}>{plan_name}</h2>
-				</a>
-        <h3 className={bemBlocks.item("subtitle")}>
-					Plan Details:
-				</h3>
-        <ul style={{ marginTop: 8, marginBottom: 8, listStyle: 'none', paddingLeft: 20 }}>
-          <li>Premium: {premium}</li>
-					<li>Level: {level}</li>
-          <li>Providers: <TagFilterList field="providers.raw" values={providers} /></li>
-        </ul>
-      </div>
-
-    </div>
-  )
+try {
+	const user_state = window.user_input.user_state;
+	searchkit.addDefaultQuery((query)=> {
+		 return query.addQuery(
+			 FilteredQuery({
+				 filter:TermQuery("state", user_state)
+			 })
+		 )
+	 })
+}
+catch(error) {
+	console.log("Frontend Mode Only");
 }
 
 export class SearchPage extends React.Component {

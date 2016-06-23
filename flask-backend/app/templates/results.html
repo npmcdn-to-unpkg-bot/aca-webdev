@@ -3,14 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>React</title>
+  <title>Searchkit Plans</title>
   <link href="https://cdn.jsdelivr.net/searchkit/0.10.0/theme.css" rel="stylesheet" />
 </head>
 
 <body>
   <div id="app"></div>
-  <script>console.log("{{ query | safe }}");</script>
+  <script type=text/javascript>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    window.user_input = {{ response|tojson|safe }};
+  </script>
   <script src="{{ url_for('static', filename='bundle.js') }}"></script>
+
 </body>
 
 </html>
