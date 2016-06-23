@@ -7,7 +7,7 @@ Install elasticsearch (Mac below):
 Paste the following settings into `config/elasticsearch.yml`:
 
     http.cors.enabled : true  
-    http.cors.allow-origin : "\*"
+    http.cors.allow-origin : "*"
     http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
     http.cors.allow-headers : X-Requested-With,X-Auth-Token,Content-Type, Content-Length
 
