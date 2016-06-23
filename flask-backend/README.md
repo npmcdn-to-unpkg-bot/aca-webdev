@@ -1,5 +1,16 @@
 # Flask Backend
 
+Install elasticsearch (Mac below):
+
+    brew install elasticsearch
+
+Paste the following settings into `config/elasticsearch.yml`:
+
+    http.cors.enabled : true  
+    http.cors.allow-origin : "\*"
+    http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
+    http.cors.allow-headers : X-Requested-With,X-Auth-Token,Content-Type, Content-Length
+
 Install and activate conda environment (aca-flask):
 
     conda env create -f environment.yml
