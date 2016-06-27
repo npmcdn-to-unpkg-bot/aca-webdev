@@ -20,7 +20,7 @@ Load the data into elasticsearch first using `simulate_plans_data.ipynb`.
 
 Initialize sqlite database by running:
 
-    sqlite3 data-dev.sqlite schema.sql
+    ./init_db data-dev.sqlite schema.sql
 
 Start the webserver:
 
