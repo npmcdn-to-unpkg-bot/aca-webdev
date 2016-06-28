@@ -13,7 +13,7 @@ import {
 import { PlanHitsListItem } from "./components";
 require("./index.scss");
 
-const host = "http://localhost:9200/data/plan"
+const host = "http://ec2-54-215-248-141.us-west-1.compute.amazonaws.com:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
 try {

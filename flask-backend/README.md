@@ -18,9 +18,9 @@ Install and activate conda environment (aca-flask):
 
 Load the data into elasticsearch first using `simulate_plans_data.ipynb`.  
 
-Initialize sqlite database by running:
+Create tables on AWS RDS PostgreSQL database:
 
-    ./init_db data-dev.sqlite schema.sql
+    psql --host=$PG_HOST --port=5432 --username=$PG_USER --password --dbname=$PG_DB --file=schema.sql
 
 Start the webserver:
 
