@@ -42,12 +42,6 @@ Paste the following settings into `config/elasticsearch.yml`:
           indices: ["<no-index>", "data"] # index aliases are taken in account!
 
 
-### Environment
-Install and activate conda environment (aca-flask):
-
-    conda env create -f environment.yml
-    source activate aca-flask    
-
 ### Load data
 
 Load the data into elasticsearch first using `simulate_plans_data.ipynb`.  
@@ -56,13 +50,15 @@ Create tables on AWS RDS PostgreSQL database:
 
     psql --host=$RDS_HOSTNAME --port=5432 --username=$RDS_USERNAME --password --dbname=$RDS_DB_NAME --file=schema.sql
 
-Start the webserver:
-
-    python manage.py runserver
 
 ### Elastic Beanstalk
-Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`
+Initiate and create environment:
 
+    eb init -i
+    eb create aca-flask
+
+Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`
+Add RDS's security group to EB
 
 #### Home Page
 ![home](screenshots/v3-ss1.png)
