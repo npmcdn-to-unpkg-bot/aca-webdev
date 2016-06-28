@@ -54,14 +54,14 @@ Load the data into elasticsearch first using `simulate_plans_data.ipynb`.
 
 Create tables on AWS RDS PostgreSQL database:
 
-    psql --host=$PG_HOST --port=5432 --username=$PG_USER --password --dbname=$PG_DB --file=schema.sql
+    psql --host=$RDS_HOSTNAME --port=5432 --username=$RDS_USERNAME --password --dbname=$RDS_DB_NAME --file=schema.sql
 
 Start the webserver:
 
     python manage.py runserver
 
 ### Elastic Beanstalk
-Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `PG_DB`, `PG_USER`, `PG_PW`, `PG_HOST`
+Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`
 
 
 #### Home Page
