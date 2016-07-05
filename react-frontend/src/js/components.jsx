@@ -4,7 +4,7 @@ import { logClick } from "./helper";
 
 export const PlanHitsListItem = (props)=> {
   const { bemBlocks, result } = props
-  const { plan_name, premium, level, url, state, providers = [] } = result._source
+  const { plan_name, premium = {}, providers = {}, level, url, state } = result._source
 
   return (
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
@@ -25,9 +25,9 @@ export const PlanHitsListItem = (props)=> {
         <ul style={{ marginTop: 8, marginBottom: 8, listStyle: 'none', paddingLeft: 20 }}>
 					<li>Score: {result._score}</li>
 					<li>State: {state}</li>
-          <li>Premium: {premium}</li>
+          <li>Premium: {premium.age_30}</li>
 					<li>Level: {level}</li>
-          <li>Providers: <TagFilterList field="providers.raw" values={providers} /></li>
+          {/*<li>Providers: <TagFilterList field="providers.raw" values={providers} /></li>*/}
         </ul>
       </div>
 

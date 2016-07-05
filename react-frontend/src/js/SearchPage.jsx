@@ -3,32 +3,40 @@ import * as _ from "lodash";
 
 import {
 	SearchkitManager, SearchkitProvider,
-	SearchBox, RefinementListFilter, MenuFilter,
+	SearchBox, RefinementListFilter, MenuFilter, InputFilter, RangeFilter,
 	Hits, HitsStats, NoHits, Pagination, SortingSelector,
 	SelectedFilters, ResetFilters, ItemHistogramList,
 	Layout, LayoutBody, LayoutResults, TopBar,
-	SideBar, ActionBar, ActionBarRow, TermQuery, FilteredQuery, BoolMust
+	SideBar, ActionBar, ActionBarRow, TermQuery, BoolMust
 } from "searchkit";
 
 import { PlanHitsListItem } from "./components";
+import { providerInputQuery } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://ec2-54-215-248-141.us-west-1.compute.amazonaws.com:9200/data/plan"
+const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
 	const user_state = window.user_input.user_state;
 	searchkit.addDefaultQuery((query)=> {
-		 return query.addQuery(
-			 FilteredQuery({
-				 filter:TermQuery("state", user_state)
-			 })
+		 return query.addFilter("state",
+			 TermQuery("state", user_state)
 		 )
 	 })
+
+	// searchkit.addDefaultQuery((query)=> {
+	// 	 return query.setSize(50).addQuery(
+	// 		 SimpleQueryString("Nikolaus")
+	// 	 )
+	// })
 }
+
 catch(error) {
 	console.log("Frontend Mode Only");
 }
+
+
 
 export class SearchPage extends React.Component {
 	render(){
@@ -40,7 +48,7 @@ export class SearchPage extends React.Component {
 		          autofocus={true}
 		          searchOnChange={true}
 							placeholder="Search plans..."
-		          prefixQueryFields={["providers^1","level^2","plan_name^10"]}/>
+		          prefixQueryFields={["level^2","plan_name^10"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
@@ -48,13 +56,25 @@ export class SearchPage extends React.Component {
 								id="level"
 								title="Metal Level"
 								field="level.raw"
-								listComponent={ItemHistogramList}/>
-		          <RefinementListFilter
-		            id="providers"
-		            title="Providers"
-		            field="providers.raw"
-		            operator="AND"
-		            size={10}/>
+								orderKey="_term"
+								listComponent={ItemHistogramList}
+							/>
+							<InputFilter
+							  id="providers"
+							  title="Providers Filter"
+							  placeholder="Search providers..."
+								queryBuilder={providerInputQuery}
+							  searchOnChange={true}
+							/>
+							<RangeFilter
+								id="premium_range"
+								title="Premiums"
+								field="premium.age_30"
+								min={0}
+								max={200}
+								showHistogram={true}
+								fieldOptions={{type:'nested', options:{path:'premium'}}}
+							/>
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
@@ -62,8 +82,9 @@ export class SearchPage extends React.Component {
 		              <HitsStats/>
 									<SortingSelector options={[
 										{label:"Relevance", field:"_score", order:"desc", defaultOption:true},
-										{label:"Premium (High to Low)", field:"premium", order:"desc"},
-										{label:"Premium (Low to High)", field:"premium", order:"asc"}
+										{label:"Premium (Desc)", key:"premium", fields:[
+											{field:"premium.age_30", options: {order:"desc", nested_path:"premium"} }
+										]}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>
