@@ -21,8 +21,8 @@
 #### Premiums Nested Attributes
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
-| age_30_tobacco_AreaID_5 | 3 | float | each combinations of rates should be one field |
-| age_31_tobacco_AreaID_5 | 3 | float | each combinations of rates should be one field |
+| age_30_tobacco_AreaID_5 | 3 | float | each combination of rates should be one field |
+| age_31_tobacco_AreaID_5 | 3 | float | each combination of rates should be one field |
 (continue...)
 
 #### Providers Nested Attributes
@@ -31,7 +31,7 @@
 | NPI | 5 | string-not_analyzed | None |
 | Full name | 5 | string-analyzed, raw-string-not_analyzed | combine first/last name |
 | Address | 5 | string-not_analyzed | array format if multiple addresses |
-| Specialty | 5 | string-analyzed, raw-string-not_analyzed | array format if multiple specialites|
+| Specialty | 5 | string-analyzed, raw-string-not_analyzed | array format if multiple specialties|
 
 #### Sources
 1. plan-attributes-puf.csv
