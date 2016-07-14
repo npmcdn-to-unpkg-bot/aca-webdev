@@ -10,21 +10,23 @@ def index():
     form = InputForm()
     if form.validate_on_submit():
         session['session_id'] = unicode(uuid4())
+        session['state'] = form.state.data
         session['age'] = form.age.data
         session['zipcode'] = form.zipcode.data
-        session['tobacco'] = form.tobacco.data
+        session['health'] = form.health.data
         log_query(
             session_id = session['session_id'],
-            age = session['state'],
+            state = session['state'],
+            age = session['age'],
             zipcode = session['zipcode'],
-            tobacco = session['tobacco']
+            health = session['health']
         )
         return redirect(url_for('main.results'))
     return render_template('index.html', form=form)
 
 @main.route('/results')
 def results():
-    response = dict(parsed_query=session['parsed_query'], user_state=session['state'])
+    response = dict(user_state=session['state'])
     return render_template('results.html', response=response)
 
 @main.route('/_clicks', methods=['POST'])

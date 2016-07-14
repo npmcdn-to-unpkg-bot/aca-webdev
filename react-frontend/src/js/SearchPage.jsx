@@ -20,23 +20,16 @@ const searchkit = new SearchkitManager(host)
 try {
 
 	// Set global vars for now
-	window.user_input = {
-		user_state: "FL",
-		user_demo: "age_30_areaID_1_individual"
-	}
+	// window.user_input = {
+	// 	user_state: "FL"
+	// }
 
-	// const user_state = window.user_input.user_state
-	// searchkit.addDefaultQuery((query)=> {
-	// 	 return query.addFilter("state",
-	// 		 TermQuery("state", user_state)
-	// 	 )
-	//  })
-
-	// searchkit.addDefaultQuery((query)=> {
-	// 	 return query.addQuery(
-	// 		 filterPremium("premiums." + window.user_input.user_demo)
-	// 	 )
-	//  })
+	const user_state = window.user_input.user_state
+	searchkit.addDefaultQuery((query)=> {
+		 return query.addFilter("state",
+			 TermQuery("state", user_state)
+		 )
+	 })
 
 } //end try
 
@@ -44,11 +37,8 @@ catch(error) {
 	console.log("Frontend Mode Only");
 }
 
-
-
 export class SearchPage extends React.Component {
 	render(){
-		const user_demo = window.user_input.user_demo;
 		return (
 			<SearchkitProvider searchkit={searchkit}>
 		    <Layout>
@@ -67,28 +57,36 @@ export class SearchPage extends React.Component {
 								orderKey="_term"
 								listComponent={ItemHistogramList}
 							/>
+							<RefinementListFilter
+		            id="issuers"
+		            title="Issuers"
+		            field="issuer.raw"
+		            operator="OR"
+								exclude=""
+		            size={10}
+							/>
 							<InputFilter
 							  id="providers"
 							  title="Providers Filter"
 							  placeholder="Search providers..."
 								queryBuilder={providerInputQuery}
 							/>
-							{/*<RangeFilter
-								id="premium_range"
-								title="Premiums"
-								field={"premiums." + user_demo}
-								min={0}
-								max={200}
-								showHistogram={true}
-								fieldOptions={{type:'nested', options:{path:'premiums'}}}
-							/>*/}
+							<RefinementListFilter
+		            id="drugs"
+		            title="Drugs"
+		            field="drugs.drug_name.raw"
+								fieldOptions={{type: "nested", options:{path: "drugs"}}}
+		            operator="OR"
+								exclude=""
+		            size={10}
+							/>
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
 		            <ActionBarRow>
 		              <HitsStats/>
 									<SortingSelector options={[
-										{label:"Relevance", field:"_score", order:"desc", defaultOption:true}										
+										{label:"Relevance", field:"_score", order:"desc", defaultOption:true}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>
@@ -98,9 +96,9 @@ export class SearchPage extends React.Component {
 		          </ActionBar>
 		          <Hits
 								mod="sk-hits-grid"
-								hitsPerPage={10}
+								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
-								sourceFilter={["level", "plan_name", "url", "premiums", "state"]}
+								sourceFilter={["level", "plan_name", "url", "state", "issuer"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>

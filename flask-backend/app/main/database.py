@@ -7,10 +7,10 @@ def get_db():
         db = g._database = psycopg2.connect(**current_app.config['PG_CONFIG'])
     return db
 
-def log_query(session_id, state, raw_query, parsed_query):
+def log_query(session_id, state, age, zipcode, health):
     conn = get_db()
     cur = conn.cursor()
-    cur.execute("INSERT INTO Queries (session_id, state, raw_query, parsed_query) VALUES (%s, %s, %s, %s)", (session_id, state, raw_query, parsed_query))
+    cur.execute("INSERT INTO Queries (session_id, state, age, zipcode, health) VALUES (%s, %s, %s, %s, %s)", (session_id, state, age, zipcode, health))
     conn.commit()
     cur.close()
 

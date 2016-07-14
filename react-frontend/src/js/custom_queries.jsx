@@ -4,12 +4,7 @@ export const providerInputQuery = (query, options) => {
         "path": "providers",
         "query": {
         	"match": {
-						"providers.provider_name": {
-                "type": "phrase_prefix",
-                "query": query.toLowerCase(),
-                "max_expansions": 50,
-								"slop": 10
-        		}
+						"providers.provider_name": query
 					}
 				},
 				"inner_hits": {

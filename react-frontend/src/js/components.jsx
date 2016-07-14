@@ -39,7 +39,7 @@ import { logClick } from "./helper";
 
 export const PlanHitsGridItem = (props)=> {
   const {bemBlocks, result} = props
-  const { plan_name, premium = {}, level, url, state } = result._source
+  const { plan_name, level, url, state, issuer } = result._source
 
   let providers = ''
   let display = 'none'
@@ -60,18 +60,18 @@ export const PlanHitsGridItem = (props)=> {
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
 
       <a href={url} target="_blank">
-        <img data-qa="poster" className={bemBlocks.item("poster")}
+        {/*<img data-qa="poster" className={bemBlocks.item("poster")}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/MetLife_Logo.svg/2000px-MetLife_Logo.svg.png"
           width="200"
-        />
-        <div data-qa="title" className={bemBlocks.item("title")}>{plan_name}</div>
+        />*/}
+        <div data-qa="title" className={bemBlocks.item("title")} onMouseDown={logClick} id={result._id}>{plan_name}</div>
       </a>
 
       <ul style={{marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' }}>
-        <li>State: {state}</li>
-        <li>Level: {level}</li>
-        <li>Relevance: {result._score}</li>
-        <li style={ {display: display} }>Matched Providers: {providers}</li>
+        <li>State: <span className={'hits-details'}> { state } </span></li>
+        <li>Issuer: <span className={'hits-details'}> { issuer } </span></li>
+        <li>Level: <span className={'hits-details'}> { level } </span></li>
+        <li style={ {display: display} }>Matched Providers: <span className={'hits-details'}> {providers} </span></li>
       </ul>
 
 
