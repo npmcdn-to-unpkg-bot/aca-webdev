@@ -10,10 +10,15 @@ def index():
     form = InputForm()
     if form.validate_on_submit():
         session['session_id'] = unicode(uuid4())
-        session['state'] = form.state.data
-        session['raw_query'] = form.query.data
-        session['parsed_query'] = parse_raw(session['raw_query'])
-        log_query(session['session_id'], session['state'], session['raw_query'], session['parsed_query'])
+        session['age'] = form.age.data
+        session['zipcode'] = form.zipcode.data
+        session['tobacco'] = form.tobacco.data
+        log_query(
+            session_id = session['session_id'],
+            age = session['state'],
+            zipcode = session['zipcode'],
+            tobacco = session['tobacco']
+        )
         return redirect(url_for('main.results'))
     return render_template('index.html', form=form)
 
