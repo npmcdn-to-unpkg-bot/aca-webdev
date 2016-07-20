@@ -14,15 +14,38 @@ import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { providerInputQuery, filterPremium } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://ec2-52-53-175-143.us-west-1.compute.amazonaws.com:9200/plans/plan/"
+// const host = "http://ec2-52-53-175-143.us-west-1.compute.amazonaws.com:9200/plans/plan/"
+const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
-try {
+// Test rescoring
+searchkit.setQueryProcessor((plainQueryObject)=>{
+	plainQueryObject["rescore"] = {
+      "window_size" : 10,
+      "query" : {
+				"score_mode": "multiply",
+         "rescore_query" : {
+					 "function_score": {
+	 					"script_score": {
+	 						"script": {
+	 							"file": "letor"
+	 						}
+	 					}
+	 				}
+         }
+			}
+	}	
+	console.log(plainQueryObject)
+  return plainQueryObject
+})
 
+
+
+try {
 	// Set global vars for now
-	// window.user_input = {
-	// 	user_state: "FL"
-	// }
+	window.user_input = {
+		user_state: "SC"
+	}
 
 	const user_state = window.user_input.user_state
 	searchkit.addDefaultQuery((query)=> {
@@ -57,21 +80,21 @@ export class SearchPage extends React.Component {
 								orderKey="_term"
 								listComponent={ItemHistogramList}
 							/>
-							<RefinementListFilter
+							{/*<RefinementListFilter
 		            id="issuers"
 		            title="Issuers"
 		            field="issuer.raw"
 		            operator="OR"
 								exclude=""
 		            size={10}
-							/>
+							/>*/}
 							<InputFilter
 							  id="providers"
 							  title="Providers Filter"
 							  placeholder="Search providers..."
 								queryBuilder={providerInputQuery}
 							/>
-							<RefinementListFilter
+							{/*<RefinementListFilter
 		            id="drugs"
 		            title="Drugs"
 		            field="drugs.drug_name.raw"
@@ -79,7 +102,7 @@ export class SearchPage extends React.Component {
 		            operator="OR"
 								exclude=""
 		            size={10}
-							/>
+							/>*/}
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
@@ -98,7 +121,8 @@ export class SearchPage extends React.Component {
 								mod="sk-hits-grid"
 								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
-								sourceFilter={["level", "plan_name", "url", "state", "issuer"]}
+								//add issuer back
+								sourceFilter={["level", "plan_name", "url", "state"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>

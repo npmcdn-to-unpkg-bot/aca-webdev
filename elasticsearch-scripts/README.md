@@ -19,6 +19,7 @@
 | Premiums_median | 8 | float | None |
 | Premiums_q1 | 8 | float | None |
 | Premiums_q3 | 8 | float | None |
+| Plan Ranks | 9 | float | Array format; for letor calcuations |
 
 #### Providers Nested Attributes (Optional)
 | Attribute | Source | Mapping | Preprocessing |
@@ -37,3 +38,4 @@
 6. Medical condition - drugs map
 7. issuers_logos.csv
 8. premiums_aggregated.csv
+9. letor data from Lei
