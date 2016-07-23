@@ -2,11 +2,15 @@ import * as React from "react";
 import * as _ from "lodash";
 import $ from "jquery";
 import { TagFilterList } from "searchkit";
-import { logClick } from "./helper";
+import { logClick, logRanks } from "./helper";
 
 export const PlanHitsGridItem = (props)=> {
   const {bemBlocks, result} = props
   const { plan_name, level, url, state, issuer } = result._source
+  // logRanks({
+  //     "plan_id": result._id,
+  //     "plan_score": result._score
+  // })
 
   let providers = ''
   let display = 'none'

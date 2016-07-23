@@ -6,7 +6,7 @@
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
 | PlanId | 1 | use as _id | None |
-| Plan Name | 1 | string-analyzed, raw-string-not_analyzed | None |
+| Plan Name | 1 | string-analyzed | None |
 | Issuer | 1 | string-analyzed, raw-string-not_analyzed | None |
 | State  | 1 | string-not_analyzed | None |
 | Plan Type | 1 | string-analyzed, raw-string-not_analyzed | None |
@@ -19,15 +19,15 @@
 | Premiums_median | 8 | float | None |
 | Premiums_q1 | 8 | float | None |
 | Premiums_q3 | 8 | float | None |
-| Plan Ranks | 9 | float | Array format; for letor calcuations |
+| Plan Ranks | 9 | float | Array format; for letor calculations |
 
 #### Providers Nested Attributes (Optional)
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
 | NPI | 5 | string-not_analyzed | None |
-| Full name | 5 | string-analyzed, raw-string-not_analyzed | combine first/last name |
+| Full name | 5 | string-analyzed | combine first/last name |
 | Address | 5 | string-not_analyzed | array format if multiple addresses |
-| Specialty | 5 | string-analyzed, raw-string-not_analyzed | array format if multiple specialties|
+| Specialty | 5 | string-not_analyzed | array format if multiple specialties|
 
 #### Sources
 1. plan-attributes-puf.csv
@@ -39,3 +39,151 @@
 7. issuers_logos.csv
 8. premiums_aggregated.csv
 9. letor data from Lei
+
+#### Sample Mapping
+
+
+    {
+      "plans" : {
+        "aliases" : { },
+        "mappings" : {
+          "plan" : {
+            "properties" : {
+              "conditions" : {
+                "type": "string",
+                "fields": {
+                  "raw": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                  }
+                }
+              },
+              "drugs" : {                
+                "type" : "string",
+                "fields" : {
+                  "raw" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  }
+                }                                  
+              },
+              "issuer" : {
+                "type" : "string",
+                "fields" : {
+                  "raw" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  }
+                }
+              },
+              "level" : {
+                "type" : "string",
+                "fields" : {
+                  "raw" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  }
+                }
+              },
+              "logo_url" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              },
+              "plan_name" : {
+                "type" : "string"
+              },
+              "plan_ranks" : {
+                "properties" : {
+                  "rank" : {
+                    "type" : "float"
+                  }
+                }
+              },
+              "plan_type" : {
+                "type" : "string",
+                "fields" : {
+                  "raw" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  }
+                }
+              },
+              "premiums_median" : {
+                "type" : "float"
+              },
+              "premiums_q1" : {
+                "type" : "float"
+              },
+              "premiums_q3" : {
+                "type" : "float"
+              },
+              "providers" : {
+                "type" : "nested",
+                "properties" : {
+                  "addresses" : {
+                    "type" : "nested",
+                    "properties" : {
+                      "address" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      },
+                      "address_2" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      },
+                      "city" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      },
+                      "phone" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      },
+                      "state" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      },
+                      "zip" : {
+                        "type" : "string",
+                        "index" : "not_analyzed"
+                      }
+                    }
+                  },
+                  "npi" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  },
+                  "provider_name" : {
+                    "type" : "string"                  
+                  },
+                  "speciality" : {
+                    "type" : "string",
+                    "index" : "not_analyzed"
+                  }
+                }
+              },
+              "state" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              },
+              "url" : {
+                "type" : "string",
+                "index" : "not_analyzed"
+              }
+            }
+          }
+        },
+        "settings" : {
+          "index" : {
+            "creation_date" : "1469304549385",
+            "number_of_shards" : "5",
+            "number_of_replicas" : "1",
+            "version" : {
+              "created" : "1050299"
+            },
+            "uuid" : "8Jw8kXcyS_2yUwTB787rBA"
+          }
+        },
+        "warmers" : { }
+      }
+    }

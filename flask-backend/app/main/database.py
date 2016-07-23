@@ -14,9 +14,16 @@ def log_query(session_id, state, age, zipcode, health):
     conn.commit()
     cur.close()
 
-def log_click(session_id, click_event):
+def log_click(session_id, plan_id):
     conn = get_db()
     cur = conn.cursor()
-    cur.execute("INSERT INTO Clicks (session_id, click_event) VALUES (%s, %s)", (session_id, click_event))
+    cur.execute("INSERT INTO Clicks (session_id, plan_id) VALUES (%s, %s)", (session_id, plan_id))
+    conn.commit()
+    cur.close()
+
+def log_ranks(session_id, plan_id, plan_score):
+    conn = get_db()
+    cur = conn.cursor()
+    cur.execute("INSERT INTO Ranks (session_id, plan_id, plan_score) VALUES (%s, %s, %s)", (session_id, plan_id, plan_score))
     conn.commit()
     cur.close()

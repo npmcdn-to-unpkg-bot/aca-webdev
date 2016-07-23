@@ -9,5 +9,5 @@ class InputForm(Form):
     state = SelectField('Select your state:', choices=us_mapping, validators =[ InputRequired()])
     age = IntegerField('Enter your age:', validators =[ InputRequired(), NumberRange(min=1, max=130) ])
     zipcode = StringField('Enter your zipcode:', validators =[ InputRequired(), Length(min=5, max=5)] )
-    health = StringField('Do you have any health conditions? If so, list them here.', validators =[ InputRequired()])
+    health = StringField('List any health conditions (e.g. high blood pressure, diabetes).', validators =[ InputRequired()])
     submit = SubmitField('Submit')

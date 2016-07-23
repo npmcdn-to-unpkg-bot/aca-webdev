@@ -1,11 +1,11 @@
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	var parentHotUpdateCallback = this["webpackHotUpdate"];
-/******/ 	this["webpackHotUpdate"] =
+/******/ 	this["webpackHotUpdate"] = 
 /******/ 	function webpackHotUpdateCallback(chunkId, moreModules) { // eslint-disable-line no-unused-vars
 /******/ 		hotAddUpdateChunk(chunkId, moreModules);
 /******/ 		if(parentHotUpdateCallback) parentHotUpdateCallback(chunkId, moreModules);
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotDownloadUpdateChunk(chunkId) { // eslint-disable-line no-unused-vars
 /******/ 		var head = document.getElementsByTagName("head")[0];
 /******/ 		var script = document.createElement("script");
@@ -14,7 +14,7 @@
 /******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + hotCurrentHash + ".hot-update.js";
 /******/ 		head.appendChild(script);
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotDownloadManifest(callback) { // eslint-disable-line no-unused-vars
 /******/ 		if(typeof XMLHttpRequest === "undefined")
 /******/ 			return callback(new Error("No browser support"));
@@ -51,8 +51,8 @@
 /******/ 		};
 /******/ 	}
 
-/******/
-/******/
+/******/ 	
+/******/ 	
 /******/ 	// Copied from https://github.com/facebook/react/blob/bef45b0/src/shared/utils/canDefineProperty.js
 /******/ 	var canDefineProperty = false;
 /******/ 	try {
@@ -63,12 +63,12 @@
 /******/ 	} catch(x) {
 /******/ 		// IE will fail on defineProperty
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "93a1c04e8ba713ee4a12"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "56e98fe47592398e4003"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
-/******/
+/******/ 	
 /******/ 	function hotCreateRequire(moduleId) { // eslint-disable-line no-unused-vars
 /******/ 		var me = installedModules[moduleId];
 /******/ 		if(!me) return __webpack_require__;
@@ -106,7 +106,7 @@
 /******/ 				}
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		function ensure(chunkId, callback) {
 /******/ 			if(hotStatus === "ready")
 /******/ 				hotSetStatus("prepare");
@@ -117,7 +117,7 @@
 /******/ 				} finally {
 /******/ 					finishChunkLoading();
 /******/ 				}
-/******/
+/******/ 	
 /******/ 				function finishChunkLoading() {
 /******/ 					hotChunksLoading--;
 /******/ 					if(hotStatus === "prepare") {
@@ -141,7 +141,7 @@
 /******/ 		}
 /******/ 		return fn;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotCreateModule(moduleId) { // eslint-disable-line no-unused-vars
 /******/ 		var hot = {
 /******/ 			// private stuff
@@ -150,7 +150,7 @@
 /******/ 			_selfAccepted: false,
 /******/ 			_selfDeclined: false,
 /******/ 			_disposeHandlers: [],
-/******/
+/******/ 	
 /******/ 			// Module API
 /******/ 			active: true,
 /******/ 			accept: function(dep, callback) {
@@ -183,7 +183,7 @@
 /******/ 				var idx = hot._disposeHandlers.indexOf(callback);
 /******/ 				if(idx >= 0) hot._disposeHandlers.splice(idx, 1);
 /******/ 			},
-/******/
+/******/ 	
 /******/ 			// Management API
 /******/ 			check: hotCheck,
 /******/ 			apply: hotApply,
@@ -198,22 +198,22 @@
 /******/ 				var idx = hotStatusHandlers.indexOf(l);
 /******/ 				if(idx >= 0) hotStatusHandlers.splice(idx, 1);
 /******/ 			},
-/******/
+/******/ 	
 /******/ 			//inherit from previous dispose call
 /******/ 			data: hotCurrentModuleData[moduleId]
 /******/ 		};
 /******/ 		return hot;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	var hotStatusHandlers = [];
 /******/ 	var hotStatus = "idle";
-/******/
+/******/ 	
 /******/ 	function hotSetStatus(newStatus) {
 /******/ 		hotStatus = newStatus;
 /******/ 		for(var i = 0; i < hotStatusHandlers.length; i++)
 /******/ 			hotStatusHandlers[i].call(null, newStatus);
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	// while downloading
 /******/ 	var hotWaitingFiles = 0;
 /******/ 	var hotChunksLoading = 0;
@@ -221,15 +221,15 @@
 /******/ 	var hotRequestedFilesMap = {};
 /******/ 	var hotAvailibleFilesMap = {};
 /******/ 	var hotCallback;
-/******/
+/******/ 	
 /******/ 	// The update info
 /******/ 	var hotUpdate, hotUpdateNewHash;
-/******/
+/******/ 	
 /******/ 	function toModuleId(id) {
 /******/ 		var isNumber = (+id) + "" === id;
 /******/ 		return isNumber ? +id : id;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotCheck(apply, callback) {
 /******/ 		if(hotStatus !== "idle") throw new Error("check() is only allowed in idle status");
 /******/ 		if(typeof apply === "function") {
@@ -249,14 +249,14 @@
 /******/ 				callback(null, null);
 /******/ 				return;
 /******/ 			}
-/******/
+/******/ 	
 /******/ 			hotRequestedFilesMap = {};
 /******/ 			hotAvailibleFilesMap = {};
 /******/ 			hotWaitingFilesMap = {};
 /******/ 			for(var i = 0; i < update.c.length; i++)
 /******/ 				hotAvailibleFilesMap[update.c[i]] = true;
 /******/ 			hotUpdateNewHash = update.h;
-/******/
+/******/ 	
 /******/ 			hotSetStatus("prepare");
 /******/ 			hotCallback = callback;
 /******/ 			hotUpdate = {};
@@ -270,7 +270,7 @@
 /******/ 			}
 /******/ 		});
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotAddUpdateChunk(chunkId, moreModules) { // eslint-disable-line no-unused-vars
 /******/ 		if(!hotAvailibleFilesMap[chunkId] || !hotRequestedFilesMap[chunkId])
 /******/ 			return;
@@ -284,7 +284,7 @@
 /******/ 			hotUpdateDownloaded();
 /******/ 		}
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotEnsureUpdateChunk(chunkId) {
 /******/ 		if(!hotAvailibleFilesMap[chunkId]) {
 /******/ 			hotWaitingFilesMap[chunkId] = true;
@@ -294,7 +294,7 @@
 /******/ 			hotDownloadUpdateChunk(chunkId);
 /******/ 		}
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotUpdateDownloaded() {
 /******/ 		hotSetStatus("ready");
 /******/ 		var callback = hotCallback;
@@ -312,7 +312,7 @@
 /******/ 			callback(null, outdatedModules);
 /******/ 		}
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	function hotApply(options, callback) {
 /******/ 		if(hotStatus !== "ready") throw new Error("apply() is only allowed in ready status");
 /******/ 		if(typeof options === "function") {
@@ -328,11 +328,11 @@
 /******/ 				if(err) throw err;
 /******/ 			};
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		function getAffectedStuff(module) {
 /******/ 			var outdatedModules = [module];
 /******/ 			var outdatedDependencies = {};
-/******/
+/******/ 	
 /******/ 			var queue = outdatedModules.slice();
 /******/ 			while(queue.length > 0) {
 /******/ 				var moduleId = queue.pop();
@@ -363,10 +363,10 @@
 /******/ 					queue.push(parentId);
 /******/ 				}
 /******/ 			}
-/******/
+/******/ 	
 /******/ 			return [outdatedModules, outdatedDependencies];
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		function addAllToSet(a, b) {
 /******/ 			for(var i = 0; i < b.length; i++) {
 /******/ 				var item = b[i];
@@ -374,7 +374,7 @@
 /******/ 					a.push(item);
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// at begin all updates modules are outdated
 /******/ 		// the "outdated" status can propagate to parents if they don't accept the children
 /******/ 		var outdatedDependencies = {};
@@ -405,7 +405,7 @@
 /******/ 				}
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// Store self accepted outdated modules to require them later by the module system
 /******/ 		var outdatedSelfAcceptedModules = [];
 /******/ 		for(var i = 0; i < outdatedModules.length; i++) {
@@ -416,7 +416,7 @@
 /******/ 					errorHandler: installedModules[moduleId].hot._selfAccepted
 /******/ 				});
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// Now in "dispose" phase
 /******/ 		hotSetStatus("dispose");
 /******/ 		var queue = outdatedModules.slice();
@@ -424,9 +424,9 @@
 /******/ 			var moduleId = queue.pop();
 /******/ 			var module = installedModules[moduleId];
 /******/ 			if(!module) continue;
-/******/
+/******/ 	
 /******/ 			var data = {};
-/******/
+/******/ 	
 /******/ 			// Call dispose handlers
 /******/ 			var disposeHandlers = module.hot._disposeHandlers;
 /******/ 			for(var j = 0; j < disposeHandlers.length; j++) {
@@ -434,13 +434,13 @@
 /******/ 				cb(data);
 /******/ 			}
 /******/ 			hotCurrentModuleData[moduleId] = data;
-/******/
+/******/ 	
 /******/ 			// disable module (this disables requires from this module)
 /******/ 			module.hot.active = false;
-/******/
+/******/ 	
 /******/ 			// remove module from cache
 /******/ 			delete installedModules[moduleId];
-/******/
+/******/ 	
 /******/ 			// remove "parents" references from all children
 /******/ 			for(var j = 0; j < module.children.length; j++) {
 /******/ 				var child = installedModules[module.children[j]];
@@ -451,7 +451,7 @@
 /******/ 				}
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// remove outdated dependency from module children
 /******/ 		for(var moduleId in outdatedDependencies) {
 /******/ 			if(Object.prototype.hasOwnProperty.call(outdatedDependencies, moduleId)) {
@@ -464,19 +464,19 @@
 /******/ 				}
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// Not in "apply" phase
 /******/ 		hotSetStatus("apply");
-/******/
+/******/ 	
 /******/ 		hotCurrentHash = hotUpdateNewHash;
-/******/
+/******/ 	
 /******/ 		// insert new code
 /******/ 		for(var moduleId in appliedUpdate) {
 /******/ 			if(Object.prototype.hasOwnProperty.call(appliedUpdate, moduleId)) {
 /******/ 				modules[moduleId] = appliedUpdate[moduleId];
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// call accept handlers
 /******/ 		var error = null;
 /******/ 		for(var moduleId in outdatedDependencies) {
@@ -501,7 +501,7 @@
 /******/ 				}
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// Load self accepted modules
 /******/ 		for(var i = 0; i < outdatedSelfAcceptedModules.length; i++) {
 /******/ 			var item = outdatedSelfAcceptedModules[i];
@@ -521,13 +521,13 @@
 /******/ 					error = err;
 /******/ 			}
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		// handle errors in accept handlers and self accepted module load
 /******/ 		if(error) {
 /******/ 			hotSetStatus("fail");
 /******/ 			return callback(error);
 /******/ 		}
-/******/
+/******/ 	
 /******/ 		hotSetStatus("idle");
 /******/ 		callback(null, outdatedModules);
 /******/ 	}
@@ -1603,7 +1603,7 @@
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.SearchPage = undefined;\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(1);\n\nvar React = _interopRequireWildcard(_react);\n\nvar _lodash = __webpack_require__(171);\n\nvar _ = _interopRequireWildcard(_lodash);\n\nvar _searchkit = __webpack_require__(173);\n\nvar _components = __webpack_require__(643);\n\nvar _custom_queries = __webpack_require__(646);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n__webpack_require__(647);\n\nvar host = \"http://ec2-52-53-175-143.us-west-1.compute.amazonaws.com:9200/plans/plan/\";\nvar searchkit = new _searchkit.SearchkitManager(host);\n\ntry {\n\t(function () {\n\n\t\t// Set global vars for now\n\t\t// window.user_input = {\n\t\t// \tuser_state: \"FL\"\n\t\t// }\n\n\t\tvar user_state = window.user_input.user_state;\n\t\tsearchkit.addDefaultQuery(function (query) {\n\t\t\treturn query.addFilter(\"state\", (0, _searchkit.TermQuery)(\"state\", user_state));\n\t\t});\n\t})();\n} //end try\n\ncatch (error) {\n\tconsole.log(\"Frontend Mode Only\");\n}\n\nvar SearchPage = exports.SearchPage = function (_React$Component) {\n\t_inherits(SearchPage, _React$Component);\n\n\tfunction SearchPage() {\n\t\t_classCallCheck(this, SearchPage);\n\n\t\treturn _possibleConstructorReturn(this, Object.getPrototypeOf(SearchPage).apply(this, arguments));\n\t}\n\n\t_createClass(SearchPage, [{\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t_searchkit.SearchkitProvider,\n\t\t\t\t{ searchkit: searchkit },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t_searchkit.Layout,\n\t\t\t\t\tnull,\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t_searchkit.TopBar,\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\tReact.createElement(_searchkit.SearchBox, {\n\t\t\t\t\t\t\tautofocus: true,\n\t\t\t\t\t\t\tplaceholder: \"Search plans...\",\n\t\t\t\t\t\t\tprefixQueryFields: [\"level^2\", \"plan_name^10\"] })\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t_searchkit.LayoutBody,\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t_searchkit.SideBar,\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(_searchkit.MenuFilter, {\n\t\t\t\t\t\t\t\tid: \"level\",\n\t\t\t\t\t\t\t\ttitle: \"Metal Level\",\n\t\t\t\t\t\t\t\tfield: \"level.raw\",\n\t\t\t\t\t\t\t\torderKey: \"_term\",\n\t\t\t\t\t\t\t\tlistComponent: _searchkit.ItemHistogramList\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.RefinementListFilter, {\n\t\t\t\t\t\t\t\tid: \"issuers\",\n\t\t\t\t\t\t\t\ttitle: \"Issuers\",\n\t\t\t\t\t\t\t\tfield: \"issuer.raw\",\n\t\t\t\t\t\t\t\toperator: \"OR\",\n\t\t\t\t\t\t\t\texclude: \"\",\n\t\t\t\t\t\t\t\tsize: 10\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.InputFilter, {\n\t\t\t\t\t\t\t\tid: \"providers\",\n\t\t\t\t\t\t\t\ttitle: \"Providers Filter\",\n\t\t\t\t\t\t\t\tplaceholder: \"Search providers...\",\n\t\t\t\t\t\t\t\tqueryBuilder: _custom_queries.providerInputQuery\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.RefinementListFilter, {\n\t\t\t\t\t\t\t\tid: \"drugs\",\n\t\t\t\t\t\t\t\ttitle: \"Drugs\",\n\t\t\t\t\t\t\t\tfield: \"drugs.drug_name.raw\",\n\t\t\t\t\t\t\t\tfieldOptions: { type: \"nested\", options: { path: \"drugs\" } },\n\t\t\t\t\t\t\t\toperator: \"OR\",\n\t\t\t\t\t\t\t\texclude: \"\",\n\t\t\t\t\t\t\t\tsize: 10\n\t\t\t\t\t\t\t})\n\t\t\t\t\t\t),\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t_searchkit.LayoutResults,\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t_searchkit.ActionBar,\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t_searchkit.ActionBarRow,\n\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.HitsStats, null),\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.SortingSelector, { options: [{ label: \"Relevance\", field: \"_score\", order: \"desc\", defaultOption: true }] })\n\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t_searchkit.ActionBarRow,\n\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.SelectedFilters, null),\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.ResetFilters, null)\n\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.Hits, {\n\t\t\t\t\t\t\t\tmod: \"sk-hits-grid\",\n\t\t\t\t\t\t\t\thitsPerPage: 20,\n\t\t\t\t\t\t\t\titemComponent: _components.PlanHitsGridItem,\n\t\t\t\t\t\t\t\tsourceFilter: [\"level\", \"plan_name\", \"url\", \"state\", \"issuer\"]\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.NoHits, null),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.Pagination, { showNumbers: true })\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn SearchPage;\n}(React.Component);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/SearchPage.jsx\n ** module id = 170\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/SearchPage.jsx?");
+	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.SearchPage = undefined;\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(1);\n\nvar React = _interopRequireWildcard(_react);\n\nvar _lodash = __webpack_require__(171);\n\nvar _ = _interopRequireWildcard(_lodash);\n\nvar _searchkit = __webpack_require__(173);\n\nvar _components = __webpack_require__(643);\n\nvar _custom_queries = __webpack_require__(646);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n__webpack_require__(647);\n\n// const host = \"http://ec2-52-53-175-143.us-west-1.compute.amazonaws.com:9200/plans/plan/\"\nvar host = \"http://localhost:9200/data/plan\";\nvar searchkit = new _searchkit.SearchkitManager(host);\n\nconsole.log(window.user_input.parsed_query);\n// Rescoring\n// searchkit.setQueryProcessor((plainQueryObject)=>{\n// \tplainQueryObject[\"rescore\"] = {\n//       \"window_size\" : 10,\n//       \"query\" : {\n// \t\t\t\t\"score_mode\": \"multiply\",\n//          \"rescore_query\" : {\n// \t\t\t\t\t \"function_score\": {\n// \t \t\t\t\t\t\"script_score\": {\n// \t \t\t\t\t\t\t\"script\": {\n// \t \t\t\t\t\t\t\t\"file\": \"letor\"\n// \t \t\t\t\t\t\t}\n// \t \t\t\t\t\t}\n// \t \t\t\t\t}\n//          }\n// \t\t\t}\n// \t}\n// \tconsole.log(plainQueryObject)\n//   return plainQueryObject\n// })\n\ntry {\n\t(function () {\n\t\t// window.user_input = {\n\t\t// \tuser_state: \"SC\"\n\t\t// }\n\n\t\tvar user_state = window.user_input.user_state;\n\t\tsearchkit.addDefaultQuery(function (query) {\n\t\t\treturn query.addFilter(\"state\", (0, _searchkit.TermQuery)(\"state\", user_state));\n\t\t});\n\t})();\n} //end try\n\ncatch (error) {\n\tconsole.log(\"Frontend Mode Only\");\n}\n\nvar SearchPage = exports.SearchPage = function (_React$Component) {\n\t_inherits(SearchPage, _React$Component);\n\n\tfunction SearchPage() {\n\t\t_classCallCheck(this, SearchPage);\n\n\t\treturn _possibleConstructorReturn(this, Object.getPrototypeOf(SearchPage).apply(this, arguments));\n\t}\n\n\t_createClass(SearchPage, [{\n\t\tkey: \"render\",\n\t\tvalue: function render() {\n\t\t\treturn React.createElement(\n\t\t\t\t_searchkit.SearchkitProvider,\n\t\t\t\t{ searchkit: searchkit },\n\t\t\t\tReact.createElement(\n\t\t\t\t\t_searchkit.Layout,\n\t\t\t\t\tnull,\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t_searchkit.TopBar,\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\tReact.createElement(_searchkit.SearchBox, {\n\t\t\t\t\t\t\tautofocus: true,\n\t\t\t\t\t\t\tplaceholder: \"Search plans...\",\n\t\t\t\t\t\t\tprefixQueryFields: [\"level^2\", \"plan_name^10\"] })\n\t\t\t\t\t),\n\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t_searchkit.LayoutBody,\n\t\t\t\t\t\tnull,\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t_searchkit.SideBar,\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(_searchkit.MenuFilter, {\n\t\t\t\t\t\t\t\tid: \"level\",\n\t\t\t\t\t\t\t\ttitle: \"Metal Level\",\n\t\t\t\t\t\t\t\tfield: \"level.raw\",\n\t\t\t\t\t\t\t\torderKey: \"_term\",\n\t\t\t\t\t\t\t\tlistComponent: _searchkit.ItemHistogramList\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.InputFilter, {\n\t\t\t\t\t\t\t\tid: \"providers\",\n\t\t\t\t\t\t\t\ttitle: \"Providers Filter\",\n\t\t\t\t\t\t\t\tplaceholder: \"Search providers...\",\n\t\t\t\t\t\t\t\tqueryBuilder: _custom_queries.providerInputQuery\n\t\t\t\t\t\t\t})\n\t\t\t\t\t\t),\n\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t_searchkit.LayoutResults,\n\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t_searchkit.ActionBar,\n\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t_searchkit.ActionBarRow,\n\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.HitsStats, null),\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.SortingSelector, { options: [{ label: \"Relevance\", field: \"_score\", order: \"desc\", defaultOption: true }] })\n\t\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\t\tReact.createElement(\n\t\t\t\t\t\t\t\t\t_searchkit.ActionBarRow,\n\t\t\t\t\t\t\t\t\tnull,\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.SelectedFilters, null),\n\t\t\t\t\t\t\t\t\tReact.createElement(_searchkit.ResetFilters, null)\n\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.Hits, {\n\t\t\t\t\t\t\t\tmod: \"sk-hits-grid\",\n\t\t\t\t\t\t\t\thitsPerPage: 20,\n\t\t\t\t\t\t\t\titemComponent: _components.PlanHitsGridItem\n\t\t\t\t\t\t\t\t//add issuer back\n\t\t\t\t\t\t\t\t, sourceFilter: [\"level\", \"plan_name\", \"url\", \"state\"]\n\t\t\t\t\t\t\t}),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.NoHits, null),\n\t\t\t\t\t\t\tReact.createElement(_searchkit.Pagination, { showNumbers: true })\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t);\n\t\t}\n\t}]);\n\n\treturn SearchPage;\n}(React.Component);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/SearchPage.jsx\n ** module id = 170\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/SearchPage.jsx?");
 
 /***/ },
 /* 171 */
@@ -3613,7 +3613,7 @@
 /* 505 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar utils = __webpack_require__(503);\nvar buildURL = __webpack_require__(506);\nvar parseHeaders = __webpack_require__(507);\nvar transformData = __webpack_require__(508);\nvar isURLSameOrigin = __webpack_require__(509);\nvar btoa = window.btoa || __webpack_require__(510);\n\nmodule.exports = function xhrAdapter(resolve, reject, config) {\n  var requestData = config.data;\n  var requestHeaders = config.headers;\n\n  if (utils.isFormData(requestData)) {\n    delete requestHeaders['Content-Type']; // Let the browser set it\n  }\n\n  var request = new XMLHttpRequest();\n\n  // For IE 8/9 CORS support\n  // Only supports POST and GET calls and doesn't returns the response headers.\n  if (window.XDomainRequest && !('withCredentials' in request) && !isURLSameOrigin(config.url)) {\n    request = new window.XDomainRequest();\n  }\n\n  // HTTP basic authentication\n  if (config.auth) {\n    var username = config.auth.username || '';\n    var password = config.auth.password || '';\n    requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);\n  }\n\n  request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);\n\n  // Set the request timeout in MS\n  request.timeout = 10000;\n\n  // Listen for ready state\n  request.onload = function handleLoad() {\n    if (!request) {\n      return;\n    }\n    // Prepare the response\n    var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;\n    var responseData = ['text', ''].indexOf(config.responseType || '') !== -1 ? request.responseText : request.response;\n    var response = {\n      data: transformData(\n        responseData,\n        responseHeaders,\n        config.transformResponse\n      ),\n      // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)\n      status: request.status === 1223 ? 204 : request.status,\n      statusText: request.status === 1223 ? 'No Content' : request.statusText,\n      headers: responseHeaders,\n      config: config\n    };\n\n    // Resolve or reject the Promise based on the status\n    ((response.status >= 200 && response.status < 300) ||\n     (!('status' in request) && response.responseText) ?\n      resolve :\n      reject)(response);\n\n    // Clean up request\n    request = null;\n  };\n\n  // Handle low level network errors\n  request.onerror = function handleError() {\n    // Real errors are hidden from us by the browser\n    // onerror should only fire if it's a network error\n    reject(new Error('Network Error'));\n\n    // Clean up request\n    request = null;\n  };\n\n  // Add xsrf header\n  // This is only done if running in a standard browser environment.\n  // Specifically not if we're in a web worker, or react-native.\n  if (utils.isStandardBrowserEnv()) {\n    var cookies = __webpack_require__(511);\n\n    // Add xsrf header\n    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?\n        cookies.read(config.xsrfCookieName) :\n        undefined;\n\n    if (xsrfValue) {\n      requestHeaders[config.xsrfHeaderName] = xsrfValue;\n    }\n  }\n\n  // Add headers to the request\n  if ('setRequestHeader' in request) {\n    utils.forEach(requestHeaders, function setRequestHeader(val, key) {\n      if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {\n        // Remove Content-Type if data is undefined\n        delete requestHeaders[key];\n      } else {\n        // Otherwise add header to the request\n        request.setRequestHeader(key, val);\n      }\n    });\n  }\n\n  // Add withCredentials to request if needed\n  if (config.withCredentials) {\n    request.withCredentials = true;\n  }\n\n  // Add responseType to request if needed\n  if (config.responseType) {\n    try {\n      request.responseType = config.responseType;\n    } catch (e) {\n      if (request.responseType !== 'json') {\n        throw e;\n      }\n    }\n  }\n\n  if (utils.isArrayBuffer(requestData)) {\n    requestData = new DataView(requestData);\n  }\n\n  // Send the request\n  request.send(requestData);\n};\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ../~/axios/lib/adapters/xhr.js\n ** module id = 505\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///../~/axios/lib/adapters/xhr.js?");
+	eval("'use strict';\n\nvar utils = __webpack_require__(503);\nvar buildURL = __webpack_require__(506);\nvar parseHeaders = __webpack_require__(507);\nvar transformData = __webpack_require__(508);\nvar isURLSameOrigin = __webpack_require__(509);\nvar btoa = window.btoa || __webpack_require__(510);\n\nmodule.exports = function xhrAdapter(resolve, reject, config) {\n  var requestData = config.data;\n  var requestHeaders = config.headers;\n\n  if (utils.isFormData(requestData)) {\n    delete requestHeaders['Content-Type']; // Let the browser set it\n  }\n\n  var request = new XMLHttpRequest();\n\n  // For IE 8/9 CORS support\n  // Only supports POST and GET calls and doesn't returns the response headers.\n  if (window.XDomainRequest && !('withCredentials' in request) && !isURLSameOrigin(config.url)) {\n    request = new window.XDomainRequest();\n  }\n\n  // HTTP basic authentication\n  if (config.auth) {\n    var username = config.auth.username || '';\n    var password = config.auth.password || '';\n    requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);\n  }\n\n  request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);\n\n  // Set the request timeout in MS\n  request.timeout = config.timeout;\n\n  // Listen for ready state\n  request.onload = function handleLoad() {\n    if (!request) {\n      return;\n    }\n    // Prepare the response\n    var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;\n    var responseData = ['text', ''].indexOf(config.responseType || '') !== -1 ? request.responseText : request.response;\n    var response = {\n      data: transformData(\n        responseData,\n        responseHeaders,\n        config.transformResponse\n      ),\n      // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)\n      status: request.status === 1223 ? 204 : request.status,\n      statusText: request.status === 1223 ? 'No Content' : request.statusText,\n      headers: responseHeaders,\n      config: config\n    };\n\n    // Resolve or reject the Promise based on the status\n    ((response.status >= 200 && response.status < 300) ||\n     (!('status' in request) && response.responseText) ?\n      resolve :\n      reject)(response);\n\n    // Clean up request\n    request = null;\n  };\n\n  // Handle low level network errors\n  request.onerror = function handleError() {\n    // Real errors are hidden from us by the browser\n    // onerror should only fire if it's a network error\n    reject(new Error('Network Error'));\n\n    // Clean up request\n    request = null;\n  };\n\n  // Add xsrf header\n  // This is only done if running in a standard browser environment.\n  // Specifically not if we're in a web worker, or react-native.\n  if (utils.isStandardBrowserEnv()) {\n    var cookies = __webpack_require__(511);\n\n    // Add xsrf header\n    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?\n        cookies.read(config.xsrfCookieName) :\n        undefined;\n\n    if (xsrfValue) {\n      requestHeaders[config.xsrfHeaderName] = xsrfValue;\n    }\n  }\n\n  // Add headers to the request\n  if ('setRequestHeader' in request) {\n    utils.forEach(requestHeaders, function setRequestHeader(val, key) {\n      if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {\n        // Remove Content-Type if data is undefined\n        delete requestHeaders[key];\n      } else {\n        // Otherwise add header to the request\n        request.setRequestHeader(key, val);\n      }\n    });\n  }\n\n  // Add withCredentials to request if needed\n  if (config.withCredentials) {\n    request.withCredentials = true;\n  }\n\n  // Add responseType to request if needed\n  if (config.responseType) {\n    try {\n      request.responseType = config.responseType;\n    } catch (e) {\n      if (request.responseType !== 'json') {\n        throw e;\n      }\n    }\n  }\n\n  if (utils.isArrayBuffer(requestData)) {\n    requestData = new DataView(requestData);\n  }\n\n  // Send the request\n  request.send(requestData);\n};\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ../~/axios/lib/adapters/xhr.js\n ** module id = 505\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///../~/axios/lib/adapters/xhr.js?");
 
 /***/ },
 /* 506 */
@@ -4441,7 +4441,7 @@
 /* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.PlanHitsGridItem = undefined;\n\nvar _react = __webpack_require__(1);\n\nvar React = _interopRequireWildcard(_react);\n\nvar _lodash = __webpack_require__(171);\n\nvar _ = _interopRequireWildcard(_lodash);\n\nvar _jquery = __webpack_require__(644);\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _searchkit = __webpack_require__(173);\n\nvar _helper = __webpack_require__(645);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\n// export const PlanHitsListItem = (props)=> {\n//   const { bemBlocks, result } = props\n//   const { plan_name, premium = {}, level, url, state } = result._source\n//\n//   return (\n//     <div className={bemBlocks.item().mix(bemBlocks.container(\"item\"))} data-qa=\"hit\">\n//\n//       <div className={bemBlocks.item(\"poster\")}>\n//         <img data-qa=\"poster\" src=\"http://glasshospital.com/wp-content/uploads/2015/03/1369238178_BlueShield4Web.png\"/>\n//       </div>\n//\n//       <div className={bemBlocks.item(\"details\")}>\n//         <a href={url} target=\"_blank\">\n// \t\t\t\t\t<h2 className={bemBlocks.item(\"plan_name\")} onMouseDown={logClick} id={result._id}>\n// \t\t\t\t\t\t{plan_name}\n// \t\t\t\t\t</h2>\n// \t\t\t\t</a>\n//         <h3 className={bemBlocks.item(\"subtitle\")}>\n// \t\t\t\t\tPlan Details:\n// \t\t\t\t</h3>\n//         <ul style={{ marginTop: 8, marginBottom: 8, listStyle: 'none', paddingLeft: 20 }}>\n// \t\t\t\t\t<li>Score: {result._score}</li>\n// \t\t\t\t\t{/*<li>State: {state}</li>*/}\n//           {/*<li>Premium: {current_premium}</li>*/}\n// \t\t\t\t\t<li>Level: {level}</li>\n//           {/*<li>Providers: <TagFilterList field=\"providers.raw\" values={providers} /></li>*/}\n//         </ul>\n//       </div>\n//\n//     </div>\n//   )\n// }\n\nvar PlanHitsGridItem = exports.PlanHitsGridItem = function PlanHitsGridItem(props) {\n  var bemBlocks = props.bemBlocks;\n  var result = props.result;\n  var _result$_source = result._source;\n  var plan_name = _result$_source.plan_name;\n  var level = _result$_source.level;\n  var url = _result$_source.url;\n  var state = _result$_source.state;\n  var issuer = _result$_source.issuer;\n\n\n  var providers = '';\n  var display = 'none';\n  try {\n    var hits = result.inner_hits.providers.hits.hits;\n    var provider_array = _jquery2.default.map(hits, function (value, index) {\n      return value._source.provider_name;\n    });\n    providers = provider_array.join(', ');\n    display = 'inline';\n  } catch (error) {}\n\n  return React.createElement(\n    \"div\",\n    { className: bemBlocks.item().mix(bemBlocks.container(\"item\")), \"data-qa\": \"hit\" },\n    React.createElement(\n      \"a\",\n      { href: url, target: \"_blank\" },\n      React.createElement(\n        \"div\",\n        { \"data-qa\": \"title\", className: bemBlocks.item(\"title\"), onMouseDown: _helper.logClick, id: result._id },\n        plan_name\n      )\n    ),\n    React.createElement(\n      \"ul\",\n      { style: { marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' } },\n      React.createElement(\n        \"li\",\n        null,\n        \"State: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          state,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        null,\n        \"Issuer: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          issuer,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        null,\n        \"Level: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          level,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        { style: { display: display } },\n        \"Matched Providers: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          providers,\n          \" \"\n        )\n      )\n    )\n  );\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/components.jsx\n ** module id = 643\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/components.jsx?");
+	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.PlanHitsGridItem = undefined;\n\nvar _react = __webpack_require__(1);\n\nvar React = _interopRequireWildcard(_react);\n\nvar _lodash = __webpack_require__(171);\n\nvar _ = _interopRequireWildcard(_lodash);\n\nvar _jquery = __webpack_require__(644);\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nvar _searchkit = __webpack_require__(173);\n\nvar _helper = __webpack_require__(645);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\nvar PlanHitsGridItem = exports.PlanHitsGridItem = function PlanHitsGridItem(props) {\n  var bemBlocks = props.bemBlocks;\n  var result = props.result;\n  var _result$_source = result._source;\n  var plan_name = _result$_source.plan_name;\n  var level = _result$_source.level;\n  var url = _result$_source.url;\n  var state = _result$_source.state;\n  var issuer = _result$_source.issuer;\n\n  (0, _helper.logRanks)({\n    \"plan_id\": result._id,\n    \"plan_score\": result._score\n  });\n\n  var providers = '';\n  var display = 'none';\n  try {\n    var hits = result.inner_hits.providers.hits.hits;\n    var provider_array = _jquery2.default.map(hits, function (value, index) {\n      return value._source.provider_name;\n    });\n    providers = provider_array.join(', ');\n    display = 'inline';\n  } catch (error) {}\n\n  return React.createElement(\n    \"div\",\n    { className: bemBlocks.item().mix(bemBlocks.container(\"item\")), \"data-qa\": \"hit\" },\n    React.createElement(\n      \"a\",\n      { href: url, target: \"_blank\" },\n      React.createElement(\n        \"div\",\n        { \"data-qa\": \"title\", className: bemBlocks.item(\"title\"), onMouseDown: _helper.logClick, id: result._id },\n        plan_name\n      )\n    ),\n    React.createElement(\n      \"ul\",\n      { style: { marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' } },\n      React.createElement(\n        \"li\",\n        null,\n        \"Score: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          result._score,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        null,\n        \"State: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          state,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        null,\n        \"Level: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          level,\n          \" \"\n        )\n      ),\n      React.createElement(\n        \"li\",\n        { style: { display: display } },\n        \"Matched Providers: \",\n        React.createElement(\n          \"span\",\n          { className: 'hits-details' },\n          \" \",\n          providers,\n          \" \"\n        )\n      )\n    )\n  );\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/components.jsx\n ** module id = 643\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/components.jsx?");
 
 /***/ },
 /* 644 */
@@ -4453,7 +4453,7 @@
 /* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.logClick = undefined;\n\nvar _jquery = __webpack_require__(644);\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar logClick = exports.logClick = function logClick(event) {\n  var payload = {\n    \"event\": event.target.id\n  };\n  var success = function success(response) {\n    console.log(response);\n  };\n  _jquery2.default.post($SCRIPT_ROOT + '/_clicks', payload, success);\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/helper.jsx\n ** module id = 645\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/helper.jsx?");
+	eval("\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.logRanks = exports.logClick = undefined;\n\nvar _jquery = __webpack_require__(644);\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar logClick = exports.logClick = function logClick(event) {\n  var payload = {\n    \"plan_id\": event.target.id\n  };\n  var success = function success(response) {\n    console.log(response);\n  };\n  _jquery2.default.post($SCRIPT_ROOT + '/_clicks', payload, success);\n};\n\nvar logRanks = exports.logRanks = function logRanks(payload) {\n  var success = function success(response) {\n    console.log(response);\n  };\n  _jquery2.default.post($SCRIPT_ROOT + '/_ranks', payload, success);\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./js/helper.jsx\n ** module id = 645\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./js/helper.jsx?");
 
 /***/ },
 /* 646 */

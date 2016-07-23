@@ -14,38 +14,37 @@ import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { providerInputQuery, filterPremium } from "./custom_queries";
 require("./index.scss");
 
-// const host = "http://ec2-52-53-175-143.us-west-1.compute.amazonaws.com:9200/plans/plan/"
 const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
-// Test rescoring
-searchkit.setQueryProcessor((plainQueryObject)=>{
-	plainQueryObject["rescore"] = {
-      "window_size" : 10,
-      "query" : {
-				"score_mode": "multiply",
-         "rescore_query" : {
-					 "function_score": {
-	 					"script_score": {
-	 						"script": {
-	 							"file": "letor"
-	 						}
-	 					}
-	 				}
-         }
-			}
-	}	
-	console.log(plainQueryObject)
-  return plainQueryObject
-})
+// console.log(window.user_input.parsed_query)
+// Rescoring
+// searchkit.setQueryProcessor((plainQueryObject)=>{
+// 	plainQueryObject["rescore"] = {
+//       "window_size" : 10,
+//       "query" : {
+// 				"score_mode": "multiply",
+//          "rescore_query" : {
+// 					 "function_score": {
+// 	 					"script_score": {
+// 	 						"script": {
+// 	 							"file": "letor"
+// 	 						}
+// 	 					}
+// 	 				}
+//          }
+// 			}
+// 	}
+// 	console.log(plainQueryObject)
+//   return plainQueryObject
+// })
 
 
 
 try {
-	// Set global vars for now
-	window.user_input = {
-		user_state: "SC"
-	}
+	// window.user_input = {
+	// 	user_state: "SC"
+	// }
 
 	const user_state = window.user_input.user_state
 	searchkit.addDefaultQuery((query)=> {
