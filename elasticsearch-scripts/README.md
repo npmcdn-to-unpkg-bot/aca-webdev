@@ -93,11 +93,7 @@
                 "type" : "string"
               },
               "plan_ranks" : {
-                "properties" : {
-                  "rank" : {
-                    "type" : "float"
-                  }
-                }
+                "type" : "float"
               },
               "plan_type" : {
                 "type" : "string",
