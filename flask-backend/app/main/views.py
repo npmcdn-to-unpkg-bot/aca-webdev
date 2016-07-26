@@ -5,7 +5,6 @@ from forms import InputForm
 from letor_get_weights import get_weights
 from uuid import uuid4
 
-
 @main.route('/', methods=['GET', 'POST'])
 def index():
     form = InputForm()
@@ -15,7 +14,8 @@ def index():
         session['age'] = form.age.data
         session['zipcode'] = form.zipcode.data
         session['health'] = form.health.data
-        session['parsed_query'] = get_weights(session['state'], session['health'])
+        session['query_weights'] = [1,2,3,4,5]
+        # session['query_weights'] = get_weights(session['state'], session['health'])
         log_query(
             session_id = session['session_id'],
             state = session['state'],
@@ -28,7 +28,8 @@ def index():
 
 @main.route('/results')
 def results():
-    response = dict(user_state=session['state'], parsed_query=session['parsed_query'])
+    response = dict(user_state=session['state'],
+                    query_weights=session['query_weights'])
     return render_template('results.html', response=response)
 
 @main.route('/_clicks', methods=['POST'])

@@ -3,17 +3,13 @@ export const providerInputQuery = (query, options) => {
 		"nested": {
 	      "path": "providers",
 	      "query": {
-          "filtered": {
-            "filter": {
-              "match": {
-                  "providers.provider_name": query
-              }
-            }
-          }
+	        "match": {
+	            "providers.provider_name": query
+	        }
 	      },
 	      "inner_hits": {
           "from": 0,
-          "size": 3
+          "size": 5
 	      }
 		}
 	}

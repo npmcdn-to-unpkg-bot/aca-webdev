@@ -42,9 +42,13 @@ export const PlanHitsGridItem = (props)=> {
           <img data-qa="poster" className={bemBlocks.item("poster")}
             src={logo_url}
             width="200"
+            onMouseDown={logClick}
+            data-plan-id={result._id}
           />
         </div>
-        <div data-qa="title" className={bemBlocks.item("title")} onMouseDown={logClick} id={result._id}>{plan_name}</div>
+        <div data-qa="title" className={bemBlocks.item("title")}
+          onMouseDown={logClick}
+          data-plan-id={result._id}>{plan_name}</div>
       </a>
 
       <ul style={{marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' }}>

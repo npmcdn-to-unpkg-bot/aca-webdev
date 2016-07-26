@@ -14,7 +14,7 @@ import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { providerInputQuery } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://169.45.104.77:9200/plans/plan"
+const host = "http://169.45.104.77:9200/plans2/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
@@ -100,13 +100,19 @@ export class SearchPage extends React.Component {
 							/>
 							<InputFilter
 							  id="providers"
-							  title="Providers Filter"
+							  title="Search Providers"
 							  placeholder="Search providers..."
-								queryBuilder={providerInputQuery}
+								queryBuilder={ providerInputQuery }
+							/>
+							<InputFilter
+							  id="drugs"
+							  title="Search Drugs"
+							  placeholder="Search drugs..."
+								queryFields={["drugs"]}
 							/>
 							<RefinementListFilter
 		            id="drugs"
-		            title="Drugs"
+		            title="Or Select From Below:"
 		            field="drugs.raw"
 		            operator="OR"
 								exclude=""
