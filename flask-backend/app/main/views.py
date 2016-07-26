@@ -1,8 +1,10 @@
 from flask import abort, jsonify, redirect, render_template, request, session, url_for
 from . import main
-from .forms import InputForm
-from uuid import uuid4
 from database import get_db, log_query, log_click, log_ranks
+from forms import InputForm
+from letor_get_weights import get_weights
+from uuid import uuid4
+
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
@@ -13,6 +15,7 @@ def index():
         session['age'] = form.age.data
         session['zipcode'] = form.zipcode.data
         session['health'] = form.health.data
+        session['parsed_query'] = get_weights(session['state'], session['health'])
         log_query(
             session_id = session['session_id'],
             state = session['state'],
@@ -25,7 +28,7 @@ def index():
 
 @main.route('/results')
 def results():
-    response = dict(user_state=session['state'], parsed_query=session['health'])
+    response = dict(user_state=session['state'], parsed_query=session['parsed_query'])
     return render_template('results.html', response=response)
 
 @main.route('/_clicks', methods=['POST'])

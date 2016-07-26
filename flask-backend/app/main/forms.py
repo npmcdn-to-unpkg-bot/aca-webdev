@@ -1,9 +1,8 @@
 from flask_wtf import Form
 from wtforms import IntegerField, SelectField, StringField, SubmitField
 from wtforms.validators import InputRequired, Length, NumberRange
-# from us.states import mapping
-# us_mapping = sorted(mapping('abbr', 'name').items())
-us_mapping = [('AZ', 'Arizona'), ('FL', 'Florida'), ('LA', 'Louisiana'), ('MT', 'Montana'), ('SC', 'South Carolina')]
+us_mapping = [('AK', 'Alaska'), ('AZ', 'Arizona'), ('FL', 'Florida'), ('LA', 'Louisiana'), ('MS', 'Missouri'),
+    ('MT', 'Montana'), ('NC', 'North Carolina'), ('NM', 'New Mexico'), ('OR', 'Oregon'), ('PA', 'Pennsylvania')]
 
 class InputForm(Form):
     state = SelectField('Select your state:', choices=us_mapping, validators =[ InputRequired()])

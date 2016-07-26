@@ -11,47 +11,43 @@ import {
 } from "searchkit";
 
 import { PlanHitsListItem, PlanHitsGridItem } from "./components";
-import { providerInputQuery, filterPremium } from "./custom_queries";
+import { providerInputQuery } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://localhost:9200/data/plan"
+const host = "http://169.45.104.77:9200/plans/plan"
 const searchkit = new SearchkitManager(host)
 
-// console.log(window.user_input.parsed_query)
-// Rescoring
-// searchkit.setQueryProcessor((plainQueryObject)=>{
-// 	plainQueryObject["rescore"] = {
-//       "window_size" : 10,
-//       "query" : {
-// 				"score_mode": "multiply",
-//          "rescore_query" : {
-// 					 "function_score": {
-// 	 					"script_score": {
-// 	 						"script": {
-// 	 							"file": "letor"
-// 	 						}
-// 	 					}
-// 	 				}
-//          }
-// 			}
-// 	}
-// 	console.log(plainQueryObject)
-//   return plainQueryObject
-// })
-
-
-
 try {
-	// window.user_input = {
-	// 	user_state: "SC"
-	// }
-
 	const user_state = window.user_input.user_state
-	searchkit.addDefaultQuery((query)=> {
+	searchkit.addDefaultQuery( (query) => {
 		 return query.addFilter("state",
 			 TermQuery("state", user_state)
 		 )
-	 })
+	})
+
+	// searchkit.setQueryProcessor(
+	// 	(plainQueryObject) => {
+	// 		plainQueryObject["rescore"] = {
+	// 			 "window_size" : 40,
+	// 			 "query" : {
+	// 				"score_mode": "multiply",
+	// 				"rescore_query" : {
+	// 					"function_score": {
+	// 						"script_score": {
+	// 							"script": {
+	// 								"file": "letor",
+	// 								"params": {
+	// 									"weights": window.user_input.query_weights
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	return plainQueryObject
+	// 	}
+	// )
 
 } //end try
 
@@ -68,7 +64,7 @@ export class SearchPage extends React.Component {
 		        <SearchBox
 		          autofocus={true}
 							placeholder="Search plans..."
-		          prefixQueryFields={["level^2","plan_name^10"]}/>
+		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuers^5"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
@@ -79,36 +75,51 @@ export class SearchPage extends React.Component {
 								orderKey="_term"
 								listComponent={ItemHistogramList}
 							/>
-							{/*<RefinementListFilter
+							<MenuFilter
+								id="plan_type"
+								title="Plan Type"
+								field="plan_type.raw"
+								orderKey="_term"
+								listComponent={ItemHistogramList}
+							/>
+							<RangeFilter
+								id="premiums_median"
+								title="Average Monthly Premiums ($)"
+								field="premiums_median"
+								min={0}
+								max={800}
+								showHistogram={true}
+							/>
+							<RefinementListFilter
 		            id="issuers"
 		            title="Issuers"
 		            field="issuer.raw"
 		            operator="OR"
 								exclude=""
 		            size={10}
-							/>*/}
+							/>
 							<InputFilter
 							  id="providers"
 							  title="Providers Filter"
 							  placeholder="Search providers..."
 								queryBuilder={providerInputQuery}
 							/>
-							{/*<RefinementListFilter
+							<RefinementListFilter
 		            id="drugs"
 		            title="Drugs"
-		            field="drugs.drug_name.raw"
-								fieldOptions={{type: "nested", options:{path: "drugs"}}}
+		            field="drugs.raw"
 		            operator="OR"
 								exclude=""
 		            size={10}
-							/>*/}
+							/>
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
 		            <ActionBarRow>
 		              <HitsStats/>
 									<SortingSelector options={[
-										{label:"Relevance", field:"_score", order:"desc", defaultOption:true}
+										{label:"Relevance", field:"_score", order:"desc", defaultOption:true},
+										{label:"Premiums", field:"premiums_median", order:"asc", defaultOption:true}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>
@@ -120,8 +131,8 @@ export class SearchPage extends React.Component {
 								mod="sk-hits-grid"
 								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
-								//add issuer back
-								sourceFilter={["level", "plan_name", "url", "state"]}
+								sourceFilter={["plan_name", "issuer", "state", "plan_type", "level", "url", "logo_url",
+									"premiums_q1", "premiums_median", "premiums_q3"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>

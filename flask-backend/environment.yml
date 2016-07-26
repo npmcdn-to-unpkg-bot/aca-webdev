@@ -1,15 +1,23 @@
 name: aca-flask
+channels:
+- r
+- defaults
 dependencies:
 - click=6.6=py27_0
 - flask=0.11=py27_0
 - itsdangerous=0.24=py27_0
 - jinja2=2.8=py27_1
 - markupsafe=0.23=py27_2
+- mkl=11.3.3=0
+- numpy=1.11.1=py27_0
 - openssl=1.0.2h=1
 - pip=8.1.2=py27_0
 - psycopg2=2.6.1=py27_1
 - python=2.7.11=0
 - readline=6.2=2
+- requests=2.10.0=py27_0
+- scikit-learn=0.17.1=np111py27_2
+- scipy=0.17.1=np111py27_1
 - setuptools=22.0.5=py27_0
 - sqlalchemy=1.0.13=py27_0
 - sqlite=3.13.0=0
@@ -41,4 +49,5 @@ dependencies:
   - us==0.9.1
   - visitor==0.1.2
   - wtforms==2.1
+prefix: /Users/InfernoIX/anaconda2/envs/aca-flask
 
