@@ -57,7 +57,8 @@ Initiate and create environment:
     eb init -i
     eb create aca-flask
 
-Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`
+Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`  
+
 Add RDS's security group to EB
 
 #### Home Page
@@ -65,5 +66,5 @@ Add RDS's security group to EB
 The user selects their state from a dropdown menu. They can also enter a query that will be parsed and used to filter results. The data is logged in a sqlite database with a unique session id.
 
 #### Results Page
-![result](screenshots/v4-ss2.png)
+![result](screenshots/v5-ss1.png)
 The user can search and filter the list of returned plans. The clickstream data is sent back to the Flask server and saved in the sqlite database.

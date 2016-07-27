@@ -14,7 +14,7 @@ import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { providerInputQuery } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://169.45.104.77:9200/plans2/plan"
+const host = "http://169.45.104.77:9200/plans/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
