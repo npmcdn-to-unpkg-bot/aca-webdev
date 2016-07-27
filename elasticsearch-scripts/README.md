@@ -11,23 +11,20 @@
 | State  | 1 | string-not_analyzed | None |
 | Plan Type | 1 | string-analyzed, raw-string-not_analyzed | None |
 | Metal Level | 1 | string-analyzed, raw-string-not_analyzed | None |
-| Plan Brochure URL  | 1 | string-not_analyzed | None |
+| Plan Brochure URL  | 1 | string-no_index | None |
 | Drugs Covered | 4 | string-analyzed, raw-string-not_analyzed | Array format
 | Providers | 5 | nested (below) | could be an array of names to avoid nested mapping |
 | Medical Conditions | 6 | string-analyzed, raw-string-not_analyzed | Array format; plan that covers 80% of drugs? |
-| Logo URL  | 7 | string-not_analyzed | None |
+| Logo URL  | 7 | string-no_index | None |
 | Premiums_median | 8 | float | None |
-| Premiums_q1 | 8 | float | None |
-| Premiums_q3 | 8 | float | None |
+| Premiums_q1 | 8 | float-no_index | None |
+| Premiums_q3 | 8 | float-no_index | None |
 | Plan Ranks | 9 | float | Array format; for letor calculations |
 
 #### Providers Nested Attributes (Optional)
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
-| NPI | 5 | string-not_analyzed | None |
 | Full name | 5 | string-analyzed | combine first/last name |
-| Address | 5 | string-not_analyzed | array format if multiple addresses |
-| Specialty | 5 | string-not_analyzed | array format if multiple specialties|
 
 #### Sources
 1. plan-attributes-puf.csv
@@ -44,8 +41,7 @@
 
 
     {
-      "plans" : {
-        "aliases" : { },
+      "plans" : {        
         "mappings" : {
           "plan" : {
             "properties" : {
@@ -87,13 +83,13 @@
               },
               "logo_url" : {
                 "type" : "string",
-                "index" : "not_analyzed"
+                "index" : "no"
               },
               "plan_name" : {
                 "type" : "string"
               },
               "plan_ranks" : {
-                "type" : "float"
+                "type" : "float"                
               },
               "plan_type" : {
                 "type" : "string",
@@ -108,54 +104,19 @@
                 "type" : "float"
               },
               "premiums_q1" : {
-                "type" : "float"
+                "type" : "float",
+                "index" : "no"
               },
               "premiums_q3" : {
-                "type" : "float"
+                "type" : "float",
+                "index" : "no"
               },
               "providers" : {
                 "type" : "nested",
-                "properties" : {
-                  "addresses" : {
-                    "type" : "nested",
-                    "properties" : {
-                      "address" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      },
-                      "address_2" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      },
-                      "city" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      },
-                      "phone" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      },
-                      "state" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      },
-                      "zip" : {
-                        "type" : "string",
-                        "index" : "not_analyzed"
-                      }
-                    }
-                  },
-                  "npi" : {
-                    "type" : "string",
-                    "index" : "not_analyzed"
-                  },
+                "properties" : {                  
                   "provider_name" : {
                     "type" : "string"                  
-                  },
-                  "speciality" : {
-                    "type" : "string",
-                    "index" : "not_analyzed"
-                  }
+                  }                  
                 }
               },
               "state" : {
@@ -164,22 +125,10 @@
               },
               "url" : {
                 "type" : "string",
-                "index" : "not_analyzed"
+                "index" : "no"
               }
             }
           }
-        },
-        "settings" : {
-          "index" : {
-            "creation_date" : "1469304549385",
-            "number_of_shards" : "5",
-            "number_of_replicas" : "1",
-            "version" : {
-              "created" : "1050299"
-            },
-            "uuid" : "8Jw8kXcyS_2yUwTB787rBA"
-          }
-        },
-        "warmers" : { }
+        }        
       }
     }

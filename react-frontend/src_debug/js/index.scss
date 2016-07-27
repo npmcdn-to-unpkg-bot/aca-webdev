@@ -3,4 +3,26 @@
 
 .sk-hits-grid-hit {
   align-items: flex-start;
+  flex: 400px 0 0;
+}
+
+.hits-details {
+  color: #9195a1;
+}
+
+.img-logo {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.sk-hits-grid-hit__poster {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.premiums {
+  color: teal;
+  font-size: 150%;
 }

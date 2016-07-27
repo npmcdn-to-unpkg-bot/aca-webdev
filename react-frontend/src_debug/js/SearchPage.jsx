@@ -18,32 +18,42 @@ const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
+	// const user_state = window.user_input.user_state
+	// searchkit.addDefaultQuery( (query) => {
+	// 	 return query.addFilter("state",
+	// 		 TermQuery("state", user_state)
+	// 	 )
+	// })
 
-	const functionQuery = (factor) => {
-	  return {
-					"function_score": {
-						"script_score": {
-							"script": {
-								"file": "letor",
-								"params": {"factor": factor}
-							}
-						}
-					}
-		}
-	}
+	// searchkit.setQueryProcessor(
+	// 	(plainQueryObject) => {
+	// 		plainQueryObject["rescore"] = {
+	// 			 "window_size" : 40,
+	// 			 "query" : {
+	// 				"score_mode": "multiply",
+	// 				"rescore_query" : {
+	// 					"function_score": {
+	// 						"script_score": {
+	// 							"script": {
+	// 								"file": "letor",
+	// 								"params": {
+	// 									"weights": window.user_input.query_weights
+	// 								}
+	// 							}
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	return plainQueryObject
+	// 	}
+	// )
 
-	searchkit.addDefaultQuery((query)=> {
-		 return query.addQuery(
-			 functionQuery(10)
-		 )
-	})
-}
+} //end try
 
 catch(error) {
 	console.log("Frontend Mode Only");
 }
-
-
 
 export class SearchPage extends React.Component {
 	render(){
@@ -53,10 +63,8 @@ export class SearchPage extends React.Component {
 		      <TopBar>
 		        <SearchBox
 		          autofocus={true}
-		          searchOnChange={true}
 							placeholder="Search plans..."
-		          prefixQueryFields={["level^2","plan_name^10"]}
-						/>
+		          queryFields={["plan_name^5"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
@@ -67,22 +75,49 @@ export class SearchPage extends React.Component {
 								orderKey="_term"
 								listComponent={ItemHistogramList}
 							/>
-							<InputFilter
-							  id="providers"
-							  title="Providers Filter"
-							  placeholder="Search providers..."
-								queryBuilder={providerInputQuery}
-							  searchOnChange={true}
-							/>
+							{/*<MenuFilter
+								id="plan_type"
+								title="Plan Type"
+								field="plan_type.raw"
+								orderKey="_term"
+								listComponent={ItemHistogramList}
+							/>*/}
 							<RangeFilter
-								id="premium_range"
-								title="Premiums"
-								field="premium.age_30"
+								id="premiums_median"
+								title="Average Monthly Premiums ($)"
+								field="premium"
 								min={0}
-								max={200}
+								max={800}
 								showHistogram={true}
-								fieldOptions={{type:'nested', options:{path:'premium'}}}
 							/>
+							{/*<RefinementListFilter
+		            id="issuers"
+		            title="Issuers"
+		            field="issuer.raw"
+		            operator="OR"
+								exclude=""
+		            size={10}
+							/>*/}
+							{/*<InputFilter
+							  id="providers"
+							  title="Search Providers"
+							  placeholder="Search providers..."
+								queryBuilder={ providerInputQuery }
+							/>*/}
+							{/*<InputFilter
+							  id="drugs"
+							  title="Search Drugs"
+							  placeholder="Search drugs..."
+								queryFields={["drugs"]}
+							/>
+							<RefinementListFilter
+		            id="drugs"
+		            title="Or Select From Below:"
+		            field="drugs.raw"
+		            operator="OR"
+								exclude=""
+		            size={10}
+							/>*/}
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
@@ -90,9 +125,7 @@ export class SearchPage extends React.Component {
 		              <HitsStats/>
 									<SortingSelector options={[
 										{label:"Relevance", field:"_score", order:"desc", defaultOption:true},
-										{label:"Premium (Desc)", key:"premium", fields:[
-											{field:"premium.age_30", options: {order:"desc", nested_path:"premium"} }
-										]}
+										{label:"Premiums", field:"premiums_median", order:"asc", defaultOption:true}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>
@@ -102,9 +135,10 @@ export class SearchPage extends React.Component {
 		          </ActionBar>
 		          <Hits
 								mod="sk-hits-grid"
-								hitsPerPage={10}
+								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
-								highlightFields={["level","plan_name"]}
+								sourceFilter={["plan_name", "state", "level", "url",
+									"premium_q1", "premium"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>
