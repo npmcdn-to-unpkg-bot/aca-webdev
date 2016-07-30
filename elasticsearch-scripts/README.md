@@ -19,7 +19,7 @@
 | Premiums_median | 8 | float | None |
 | Premiums_q1 | 8 | float-no_index | None |
 | Premiums_q3 | 8 | float-no_index | None |
-| Plan Ranks | 9 | float | Array format; for letor calculations |
+| Plan Ranks | 9 | float-no_index | Array format; for letor calculations |
 
 #### Providers Nested Attributes (Optional)
 | Attribute | Source | Mapping | Preprocessing |
@@ -89,7 +89,8 @@
                 "type" : "string"
               },
               "plan_ranks" : {
-                "type" : "float"                
+                "type" : "float",
+                "index": "no"
               },
               "plan_type" : {
                 "type" : "string",
