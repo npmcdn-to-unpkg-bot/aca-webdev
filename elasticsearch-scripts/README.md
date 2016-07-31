@@ -5,26 +5,28 @@
 
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
-| PlanId | 1 | use as _id | None |
-| Plan Name | 1 | string-analyzed | None |
-| Issuer | 1 | string-analyzed, raw-string-not_analyzed | None |
-| State  | 1 | string-not_analyzed | None |
-| Plan Type | 1 | string-analyzed, raw-string-not_analyzed | None |
-| Metal Level | 1 | string-analyzed, raw-string-not_analyzed | None |
-| Plan Brochure URL  | 1 | string-no_index | None |
-| Drugs Covered | 4 | string-analyzed, raw-string-not_analyzed | Array format
+| PlanId | 1 | use as _id | none |
+| Plan Name | 1 | string-analyzed | none |
+| Issuer | 1 | string-analyzed, raw-string-not_analyzed | none |
+| State  | 1 | string-not_analyzed | none |
+| Plan Type | 1 | string-analyzed, raw-string-not_analyzed | none |
+| Metal Level | 1 | string-analyzed, raw-string-not_analyzed | none |
+| Plan Brochure URL  | 1 | string-no_index | none |
+| Drugs Covered | 4 | string-analyzed | Array format
 | Providers | 5 | nested (below) | could be an array of names to avoid nested mapping |
 | Medical Conditions | 6 | string-analyzed, raw-string-not_analyzed | Array format; plan that covers 80% of drugs? |
-| Logo URL  | 7 | string-no_index | None |
-| Premiums_median | 8 | float | None |
-| Premiums_q1 | 8 | float-no_index | None |
-| Premiums_q3 | 8 | float-no_index | None |
-| Plan Ranks | 9 | float-no_index | Array format; for letor calculations |
+| Logo URL  | 7 | string-no_index | none |
+| Premiums_median | 8 | float | none |
+| Premiums_q1 | 8 | float-no_index | none |
+| Premiums_q3 | 8 | float-no_index | none |
+| Plan Ranks | 9 | float | each component gets a field; use zero-indexing; Lei provide max number of components? |
 
-#### Providers Nested Attributes (Optional)
+#### Providers Nested Attributes
 | Attribute | Source | Mapping | Preprocessing |
 |-----------|--------|---------|---------------|
 | Full name | 5 | string-analyzed | combine first/last name |
+| Specialties | 5 | string-analyzed | array |
+| NPI | 5 | string-no_index | none |
 
 #### Sources
 1. plan-attributes-puf.csv
@@ -39,29 +41,23 @@
 
 #### Sample Mapping
 
-
     {
-      "plans" : {        
+      "plans_v2" : {
         "mappings" : {
           "plan" : {
             "properties" : {
               "conditions" : {
-                "type": "string",
-                "fields": {
-                  "raw": {
-                    "type": "string",
-                    "index": "not_analyzed"
-                  }
-                }
-              },
-              "drugs" : {                
                 "type" : "string",
                 "fields" : {
                   "raw" : {
                     "type" : "string",
                     "index" : "not_analyzed"
                   }
-                }                                  
+                }
+              },
+              "drugs" : {
+                "type" : "string",              
+                "analyzer" : "simpleAnalyzer"
               },
               "issuer" : {
                 "type" : "string",
@@ -88,9 +84,35 @@
               "plan_name" : {
                 "type" : "string"
               },
-              "plan_ranks" : {
-                "type" : "float",
-                "index": "no"
+              "plan_rank_0" : {
+                "type" : "float"
+              },
+              "plan_rank_1" : {
+                "type" : "float"
+              },              
+              "plan_rank_2" : {
+                "type" : "float"
+              },
+              "plan_rank_3" : {
+                "type" : "float"
+              },
+              "plan_rank_4" : {
+                "type" : "float"
+              },
+              "plan_rank_5" : {
+                "type" : "float"
+              },
+              "plan_rank_6" : {
+                "type" : "float"
+              },
+              "plan_rank_7" : {
+                "type" : "float"
+              },
+              "plan_rank_8" : {
+                "type" : "float"
+              },
+              "plan_rank_9" : {
+                "type" : "float"
               },
               "plan_type" : {
                 "type" : "string",
@@ -114,9 +136,18 @@
               },
               "providers" : {
                 "type" : "nested",
-                "properties" : {                  
+                "properties" : {
+                  "npi" : {
+                    "type" : "string",
+                    "index" : "no"
+                  },
                   "provider_name" : {
-                    "type" : "string"                  
+                    "type" : "string",
+                    "analyzer" : "simpleAnalyzer"
+                  },
+                  "specialities" : {
+                    "type" : "string",
+                    "analyzer" : "simpleAnalyzer"
                   }                  
                 }
               },
@@ -130,6 +161,6 @@
               }
             }
           }
-        }        
+        }
       }
     }
