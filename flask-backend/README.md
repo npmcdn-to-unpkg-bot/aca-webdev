@@ -60,11 +60,3 @@ Initiate and create environment:
 Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`  
 
 Add RDS's security group to EB
-
-#### Home Page
-![home](screenshots/v6-ss1.png)
-The user enters their information into a short form, which we use to present a list of plans tailored to their needs. The form data is logged in a PostgreSQL database with a unique session id.
-
-#### Results Page
-![result](screenshots/v6-ss2.png)
-The user can further search and filter the list of returned plans, which are ranked by a Learn to Rank (LETOR) algorithm. The clickstream data is sent to the Flask server and saved in the PostgreSQL database.

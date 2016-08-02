@@ -31,3 +31,7 @@ export const display_inner_hits = (inner_hits, subfield) => {
   const display = 'block'
   return [inner_providers, display]
 };
+
+export const load_backup_logo = (event) => {
+  event.target.setAttribute("src", "/static/img/semantic-health-logo-small.png")
+}

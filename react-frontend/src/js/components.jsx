@@ -2,22 +2,20 @@ import * as React from "react";
 import * as _ from "lodash";
 import $ from "jquery";
 import { TagFilterList } from "searchkit";
-import { logClick, logRanks, display_inner_hits } from "./helper";
+import { logClick, logRanks, display_inner_hits, load_backup_logo } from "./helper";
 
 export const PlanHitsGridItem = (props)=> {
   const { bemBlocks, result } = props
-  const { plan_name, issuer, state, plan_type, level, url,
-    premiums_q1, premiums_median, premiums_q3 } = result._source
+  const { plan_name, issuer, state, plan_type, level, premiums_q1, premiums_median, premiums_q3 } = result._source
 
   let logo_url = result._source.logo_url
   if (logo_url == "") {
     logo_url = "/static/img/semantic-health-logo-small.png"
   }
-
-  logRanks({
-      "plan_id": result._id,
-      "plan_score": result._score
-  })
+  let url = result._source.url
+  if (url == "") {
+    url = encodeURI("http://www.google.com/#q=" + issuer + " " + plan_name)
+  }
 
   let providers = ''
   let display_providers = 'none'
@@ -37,6 +35,11 @@ export const PlanHitsGridItem = (props)=> {
   }
   catch (error) {}
 
+  logRanks({
+      "plan_id": result._id,
+      "plan_score": result._score
+  })
+
   return (
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
 
@@ -46,6 +49,7 @@ export const PlanHitsGridItem = (props)=> {
             src={logo_url}
             onMouseDown={logClick}
             data-plan-id={result._id}
+            onError={load_backup_logo}
           />
         </div>
         <div data-qa="title" className={bemBlocks.item("title")}

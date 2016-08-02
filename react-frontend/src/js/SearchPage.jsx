@@ -15,7 +15,7 @@ import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { inputQuery, generateRescore } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://169.45.104.75:9200/plans/plan"
+const host = "http://169.45.104.77:9200/plans/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
@@ -65,7 +65,7 @@ export class SearchPage extends React.Component {
 		        <SearchBox
 		          autofocus={true}
 							placeholder="Search plan names, metal levels, types, issuers..."
-		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuers^5"]}/>
+		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuer^5"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
