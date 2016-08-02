@@ -9,7 +9,7 @@ export const PlanHitsGridItem = (props)=> {
   const { plan_name, state, level, url,
     premium_q1, premium } = result._source
 
-  console.log(result._source)
+  // console.log(result._source)
   // let logo_url = result._source.logo_url
   // if (logo_url == "") {
   //   logo_url = "http://www.brandcrowd.com/gallery/brands/pictures/picture14180603564036.png"

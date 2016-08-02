@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as _ from "lodash";
+import $ from "jquery";
 
 import {
 	SearchkitManager, SearchkitProvider,
@@ -11,43 +12,36 @@ import {
 } from "searchkit";
 
 import { PlanHitsListItem, PlanHitsGridItem } from "./components";
-import { providerInputQuery } from "./custom_queries";
+import { inputQuery, generateRescore } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://169.45.104.77:9200/plans/plan"
+const host = "http://169.45.104.75:9200/plans/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
-	const user_state = window.user_input.user_state
+	var { user_state, query_weights, premium_cap } = window.user_input
+
 	searchkit.addDefaultQuery( (query) => {
 		 return query.addFilter("state",
 			 TermQuery("state", user_state)
 		 )
 	})
 
-	// searchkit.setQueryProcessor(
-	// 	(plainQueryObject) => {
-	// 		plainQueryObject["rescore"] = {
-	// 			 "window_size" : 40,
-	// 			 "query" : {
-	// 				"score_mode": "multiply",
-	// 				"rescore_query" : {
-	// 					"function_score": {
-	// 						"script_score": {
-	// 							"script": {
-	// 								"file": "letor",
-	// 								"params": {
-	// 									"weights": window.user_input.query_weights
-	// 								}
-	// 							}
-	// 						}
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	return plainQueryObject
-	// 	}
-	// )
+	if ( query_weights != 0) {
+		const rescore_query = generateRescore(query_weights)
+		searchkit.setQueryProcessor( (plainQueryObject) => {
+				plainQueryObject["rescore"] = rescore_query
+				return plainQueryObject
+		})
+	}
+
+	var display_cap_yes = "none"
+	var display_cap_no = "none"
+	if (premium_cap == 0) {
+		display_cap_no = "inline"
+	} else {
+		display_cap_yes = "inline"
+	}
 
 } //end try
 
@@ -57,17 +51,52 @@ catch(error) {
 
 export class SearchPage extends React.Component {
 	render(){
+
+
 		return (
 			<SearchkitProvider searchkit={searchkit}>
 		    <Layout>
 		      <TopBar>
+						<div>
+							<a href={"/"}>
+								<img src={"/static/img/semantic-health-logo-small-white.png"}/>
+							</a>
+						</div>
 		        <SearchBox
 		          autofocus={true}
-							placeholder="Search plans..."
+							placeholder="Search plan names, metal levels, types, issuers..."
 		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuers^5"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
+							<InputFilter
+								id="providers"
+								title="Search Providers"
+								placeholder="Search providers..."
+								queryOptions={ {path: "providers", subfield: "provider_name"} }
+								queryBuilder={ inputQuery }
+							/>
+							<InputFilter
+								id="specialties"
+								title="Search Specialties"
+								placeholder="Search specialties..."
+								queryOptions={ {path: "providers", subfield: "speciality"} }
+								queryBuilder={ inputQuery }
+							/>
+							<InputFilter
+								id="drugs"
+								title="Search Drugs"
+								placeholder="Search drugs..."
+								queryFields={["drugs"]}
+							/>
+							<RangeFilter
+								id="premiums_median"
+								title="Average Monthly Premiums ($)"
+								field="premiums_median"
+								min={0}
+								max={800}
+								showHistogram={true}
+							/>
 							<MenuFilter
 								id="level"
 								title="Metal Level"
@@ -82,45 +111,24 @@ export class SearchPage extends React.Component {
 								orderKey="_term"
 								listComponent={ItemHistogramList}
 							/>
-							<RangeFilter
-								id="premiums_median"
-								title="Average Monthly Premiums ($)"
-								field="premiums_median"
-								min={0}
-								max={800}
-								showHistogram={true}
-							/>
 							<RefinementListFilter
-		            id="issuers"
-		            title="Issuers"
-		            field="issuer.raw"
-		            operator="OR"
+					            id="issuers"
+					            title="Issuers"
+					            field="issuer.raw"
+					            operator="OR"
 								exclude=""
-		            size={10}
-							/>
-							<InputFilter
-							  id="providers"
-							  title="Search Providers"
-							  placeholder="Search providers..."
-								queryBuilder={ providerInputQuery }
-							/>
-							<InputFilter
-							  id="drugs"
-							  title="Search Drugs"
-							  placeholder="Search drugs..."
-								queryFields={["drugs"]}
-							/>
-							<RefinementListFilter
-		            id="drugs"
-		            title="Or Select From Below:"
-		            field="drugs.raw"
-		            operator="OR"
-								exclude=""
-		            size={10}
+		            			size={10}
 							/>
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
+								<ActionBarRow>
+									<div className = {'hits-details show-query'}>
+										Showing Plans for {user_state}.&nbsp;
+										<span style={ {display: display_cap_yes} }>Your monthly insurance cost is capped at ${premium_cap}. </span>
+										<span style={ {display: display_cap_no} }>You do not qualify for a subsidy, or you did not enter your income. </span>
+									</div>
+								</ActionBarRow>
 		            <ActionBarRow>
 		              <HitsStats/>
 									<SortingSelector options={[
@@ -138,7 +146,7 @@ export class SearchPage extends React.Component {
 								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
 								sourceFilter={["plan_name", "issuer", "state", "plan_type", "level", "url", "logo_url",
-									"premiums_q1", "premiums_median", "premiums_q3"]}
+									"premiums_q1", "premiums_median", "premiums_q3", "plan_rank_*"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>

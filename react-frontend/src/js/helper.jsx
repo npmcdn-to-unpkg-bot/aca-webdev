@@ -19,3 +19,15 @@ export const logRanks = (payload)=> {
   }
   $.post($SCRIPT_ROOT + '/_ranks', payload, success);
 };
+
+export const display_inner_hits = (inner_hits, subfield) => {
+  const hits = inner_hits[subfield]["hits"]["hits"]
+  const provider_array = $.map(hits,
+    function(value, index) {
+      return value["_source"]["provider_name"]
+    }
+  )
+  const inner_providers = provider_array.join(', ')
+  const display = 'block'
+  return [inner_providers, display]
+};

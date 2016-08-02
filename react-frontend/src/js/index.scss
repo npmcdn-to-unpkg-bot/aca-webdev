@@ -1,7 +1,8 @@
-// $sk-primary-theme-color: #4fb0b7;
 @import "~searchkit/theming/theme.scss";
 
-.sk-hits-grid-hit {
+$sk-primary-theme-color: #0a505f;
+
+.sk-hits-grid-hit {  
   align-items: flex-start;
   flex: 400px 0 0;
 }
@@ -10,19 +11,36 @@
   color: #9195a1;
 }
 
-.img-logo {
-  height: 200px;
+.hits-italics {
+  font-style: italic;
+}
+
+.show-query {
+  font-style: italic;
+}
+
+.div-img-logo {
+  height: 133px;
   width: 200px;
   overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .sk-hits-grid-hit__poster {
+  margin: 0 auto;
+  max-width:100%;
+  max-height:100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.sk-hits-grid-hit__title:hover {
+  color: orange;
+}
 .premiums {
   color: teal;
-  font-size: 150%;
+  font-size: 120%;
 }

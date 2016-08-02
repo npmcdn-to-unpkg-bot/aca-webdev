@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as _ from "lodash";
+import $ from "jquery";
 
 import {
 	SearchkitManager, SearchkitProvider,
@@ -11,43 +12,33 @@ import {
 } from "searchkit";
 
 import { PlanHitsListItem, PlanHitsGridItem } from "./components";
-import { providerInputQuery } from "./custom_queries";
+import { providerInputQuery, generateRescore } from "./custom_queries";
 require("./index.scss");
 
 const host = "http://localhost:9200/data/plan"
 const searchkit = new SearchkitManager(host)
 
-try {
-	// const user_state = window.user_input.user_state
-	// searchkit.addDefaultQuery( (query) => {
-	// 	 return query.addFilter("state",
-	// 		 TermQuery("state", user_state)
-	// 	 )
-	// })
+window.user_input = {
+	user_state: "FL",
+	query_weights: [10, 10, 10]
+}
 
-	// searchkit.setQueryProcessor(
-	// 	(plainQueryObject) => {
-	// 		plainQueryObject["rescore"] = {
-	// 			 "window_size" : 40,
-	// 			 "query" : {
-	// 				"score_mode": "multiply",
-	// 				"rescore_query" : {
-	// 					"function_score": {
-	// 						"script_score": {
-	// 							"script": {
-	// 								"file": "letor",
-	// 								"params": {
-	// 									"weights": window.user_input.query_weights
-	// 								}
-	// 							}
-	// 						}
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	return plainQueryObject
-	// 	}
-	// )
+try {
+	const { user_state, query_weights } = window.user_input
+
+	searchkit.addDefaultQuery( (query) => {
+		 return query.addFilter("state",
+			 TermQuery("state", user_state)
+		 )
+	})
+
+	if ( query_weights != 0) {
+		const rescore_query = generateRescore(query_weights)
+		searchkit.setQueryProcessor( (plainQueryObject) => {
+				plainQueryObject["rescore"] = rescore_query
+				return plainQueryObject
+		})
+	}
 
 } //end try
 
@@ -68,20 +59,7 @@ export class SearchPage extends React.Component {
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
-							<MenuFilter
-								id="level"
-								title="Metal Level"
-								field="level.raw"
-								orderKey="_term"
-								listComponent={ItemHistogramList}
-							/>
-							{/*<MenuFilter
-								id="plan_type"
-								title="Plan Type"
-								field="plan_type.raw"
-								orderKey="_term"
-								listComponent={ItemHistogramList}
-							/>*/}
+							<MenuFilter id="level" title="Metal Level" field="level.raw" listComponent={ItemHistogramList}/>
 							<RangeFilter
 								id="premiums_median"
 								title="Average Monthly Premiums ($)"
@@ -90,34 +68,6 @@ export class SearchPage extends React.Component {
 								max={800}
 								showHistogram={true}
 							/>
-							{/*<RefinementListFilter
-		            id="issuers"
-		            title="Issuers"
-		            field="issuer.raw"
-		            operator="OR"
-								exclude=""
-		            size={10}
-							/>*/}
-							{/*<InputFilter
-							  id="providers"
-							  title="Search Providers"
-							  placeholder="Search providers..."
-								queryBuilder={ providerInputQuery }
-							/>*/}
-							{/*<InputFilter
-							  id="drugs"
-							  title="Search Drugs"
-							  placeholder="Search drugs..."
-								queryFields={["drugs"]}
-							/>
-							<RefinementListFilter
-		            id="drugs"
-		            title="Or Select From Below:"
-		            field="drugs.raw"
-		            operator="OR"
-								exclude=""
-		            size={10}
-							/>*/}
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
@@ -138,7 +88,7 @@ export class SearchPage extends React.Component {
 								hitsPerPage={20}
 								itemComponent={PlanHitsGridItem}
 								sourceFilter={["plan_name", "state", "level", "url",
-									"premium_q1", "premium"]}
+									"premium_q1", "premium", "plan_ranks"]}
 							/>
 		          <NoHits/>
 							<Pagination showNumbers={true}/>

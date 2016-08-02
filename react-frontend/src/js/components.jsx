@@ -2,7 +2,7 @@ import * as React from "react";
 import * as _ from "lodash";
 import $ from "jquery";
 import { TagFilterList } from "searchkit";
-import { logClick, logRanks } from "./helper";
+import { logClick, logRanks, display_inner_hits } from "./helper";
 
 export const PlanHitsGridItem = (props)=> {
   const { bemBlocks, result } = props
@@ -11,7 +11,7 @@ export const PlanHitsGridItem = (props)=> {
 
   let logo_url = result._source.logo_url
   if (logo_url == "") {
-    logo_url = "http://www.brandcrowd.com/gallery/brands/pictures/picture14180603564036.png"
+    logo_url = "/static/img/semantic-health-logo-small.png"
   }
 
   logRanks({
@@ -20,28 +20,30 @@ export const PlanHitsGridItem = (props)=> {
   })
 
   let providers = ''
-  let display = 'none'
+  let display_providers = 'none'
   try {
-      const hits = result.inner_hits.providers.hits.hits
-      const provider_array = $.map(hits,
-        function(value, index) {
-          return value._source.provider_name
-        }
-      )
-      providers = provider_array.join(', ')
-      display = 'inline'
+    const [inner_providers, inner_display_providers] = display_inner_hits(result.inner_hits, "provider_name")
+    providers = inner_providers
+    display_providers = inner_display_providers
   }
   catch (error) {}
 
+  let specialists = ''
+  let display_specialists = 'none'
+  try {
+    const [inner_specialists, inner_display_specialists] = display_inner_hits(result.inner_hits, "speciality")
+    specialists = inner_specialists
+    display_specialists = inner_display_specialists
+  }
+  catch (error) {}
 
   return (
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
 
       <a href={url} target="_blank">
-        <div className="img-logo">
+        <div className="div-img-logo">
           <img data-qa="poster" className={bemBlocks.item("poster")}
             src={logo_url}
-            width="200"
             onMouseDown={logClick}
             data-plan-id={result._id}
           />
@@ -52,16 +54,16 @@ export const PlanHitsGridItem = (props)=> {
       </a>
 
       <ul style={{marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' }}>
+        <li className={'hits-italics'}>{ plan_type } plan by { issuer }</li>
         <li>Score: <span className={'hits-details'}> { result._score } </span></li>
-        <li>State: <span className={'hits-details'}> { state } </span></li>
-        <li>Issuer: <span className={'hits-details'}> { issuer } </span></li>
         <li>Level: <span className={'hits-details'}> { level } </span></li>
-        <li>Type: <span className={'hits-details'}> { plan_type } </span></li>
-        <li>Range of Premiums: <span className={'hits-details'}> ${ parseInt(premiums_q1) } &mdash; ${ parseInt(premiums_q3) } </span></li>
-        <li>Average Monthly Premiums: <span className={'premiums'}> ${ parseInt(premiums_median) } </span></li>
-        <li style={ {display: display} }>Matched Providers: <span className={'hits-details'}> {providers} </span></li>
+        <li>State: <span className={'hits-details'}> { state } </span></li>
+        <li style={ {display: display_providers} }>Matched Providers: <span className={'hits-details'}> {providers} </span></li>
+        <li style={ {display: display_specialists} }>Matched Specialists: <span className={'hits-details'}> {specialists} </span></li>
+        <li><br></br></li>
+        <li className={'premiums'}> ${ parseInt(premiums_median) } /mo</li>
+        <li className={'hits-details'}> (estimated ${ parseInt(premiums_q1) } &mdash; ${ parseInt(premiums_q3) }) </li>
       </ul>
-
 
     </div>
   )

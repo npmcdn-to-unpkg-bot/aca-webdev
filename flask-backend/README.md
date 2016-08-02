@@ -62,9 +62,9 @@ Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USE
 Add RDS's security group to EB
 
 #### Home Page
-![home](screenshots/v4-ss1.png)
-The user selects their state from a dropdown menu. They can also enter a query that will be parsed and used to filter results. The data is logged in a sqlite database with a unique session id.
+![home](screenshots/v6-ss1.png)
+The user enters their information into a short form, which we use to present a list of plans tailored to their needs. The form data is logged in a PostgreSQL database with a unique session id.
 
 #### Results Page
-![result](screenshots/v5-ss1.png)
-The user can search and filter the list of returned plans. The clickstream data is sent back to the Flask server and saved in the sqlite database.
+![result](screenshots/v6-ss2.png)
+The user can further search and filter the list of returned plans, which are ranked by a Learn to Rank (LETOR) algorithm. The clickstream data is sent to the Flask server and saved in the PostgreSQL database.

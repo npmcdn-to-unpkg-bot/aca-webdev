@@ -1,9 +1,12 @@
+from __future__ import print_function
 from flask import abort, jsonify, redirect, render_template, request, session, url_for
 from . import main
+from aca_subsidycalc import CalcAcaSubsidy
 from database import get_db, log_query, log_click, log_ranks
 from forms import InputForm
 from letor_get_weights import get_weights
 from uuid import uuid4
+import sys
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
@@ -14,8 +17,15 @@ def index():
         session['age'] = form.age.data
         session['zipcode'] = form.zipcode.data
         session['health'] = form.health.data
-        session['query_weights'] = [1,2,3,4,5]
-        # session['query_weights'] = get_weights(session['state'], session['health'])
+        session['income'] = form.income.data
+        session['hhsize'] = form.hhsize.data
+        if session['income'] and session['hhsize']:
+            _, premium_cap = CalcAcaSubsidy(session['income'], session['hhsize']) or 0
+            session['premium_cap'] = int(premium_cap)
+        else:
+            session['premium_cap'] = 0
+        print(session['premium_cap'], file=sys.stderr)
+        session['query_weights'] = get_weights(session['state'], str(session['health']))
         log_query(
             session_id = session['session_id'],
             state = session['state'],
@@ -29,7 +39,8 @@ def index():
 @main.route('/results')
 def results():
     response = dict(user_state=session['state'],
-                    query_weights=session['query_weights'])
+                    query_weights=session['query_weights'],
+                    premium_cap=session['premium_cap'])
     return render_template('results.html', response=response)
 
 @main.route('/_clicks', methods=['POST'])
