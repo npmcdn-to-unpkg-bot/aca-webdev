@@ -1,7 +1,4 @@
 import * as React from "react";
-import * as _ from "lodash";
-import $ from "jquery";
-import { TagFilterList } from "searchkit";
 import { logClick, logRanks, display_inner_hits, load_backup_logo } from "./helper";
 
 export const PlanHitsGridItem = (props)=> {
@@ -35,6 +32,7 @@ export const PlanHitsGridItem = (props)=> {
   }
   catch (error) {}
 
+  console.log(result)
   logRanks({
       "plan_id": result._id,
       "plan_score": result._score
@@ -58,12 +56,15 @@ export const PlanHitsGridItem = (props)=> {
       </a>
 
       <ul style={{marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' }}>
-        <li className={'hits-italics'}>{ plan_type } plan by { issuer }</li>
+        <li>Plan: <span className={'hits-details'}> { plan_name } </span></li>
+        <li>Issuer: <span className={'hits-details'}> { issuer } </span></li>
         <li>Score: <span className={'hits-details'}> { result._score } </span></li>
         <li>Level: <span className={'hits-details'}> { level } </span></li>
-        <li>State: <span className={'hits-details'}> { state } </span></li>
-        <li style={ {display: display_providers} }>Matched Providers: <span className={'hits-details'}> {providers} </span></li>
-        <li style={ {display: display_specialists} }>Matched Specialists: <span className={'hits-details'}> {specialists} </span></li>
+        <li><a href={ "providers_map?plan_id=" + encodeURIComponent(result._id) } target="_blank" className={ "link" }>
+          Providers Nearby
+        </a></li>
+        <li style={ {display: display_providers} }>Matched Providers: <span className={'hits-details'}> { providers } </span></li>
+        <li style={ {display: display_specialists} }>Matched Specialists: <span className={'hits-details'}> { specialists } </span></li>
         <li><br></br></li>
         <li className={'premiums'}> ${ parseInt(premiums_median) } /mo</li>
         <li className={'hits-details'}> (estimated ${ parseInt(premiums_q1) } &mdash; ${ parseInt(premiums_q3) }) </li>

@@ -13,6 +13,7 @@ Flask-Moment==0.5.1
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
 Flask-WTF==0.12
+geopy==1.11.0
 ipaddress==1.0.16
 itsdangerous==0.24
 jellyfish==0.5.1

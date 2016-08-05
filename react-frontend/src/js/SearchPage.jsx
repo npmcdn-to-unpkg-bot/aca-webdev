@@ -8,14 +8,14 @@ import {
 	Hits, HitsStats, NoHits, Pagination, SortingSelector,
 	SelectedFilters, ResetFilters, ItemHistogramList,
 	Layout, LayoutBody, LayoutResults, TopBar,
-	SideBar, ActionBar, ActionBarRow, TermQuery, BoolMust
+	SideBar, ActionBar, ActionBarRow, TermQuery
 } from "searchkit";
 
 import { PlanHitsListItem, PlanHitsGridItem } from "./components";
 import { inputQuery, generateRescore } from "./custom_queries";
 require("./index.scss");
 
-const host = "http://169.45.104.77:9200/plans/plan"
+const host = "http://169.45.104.77:80/plans/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
@@ -64,7 +64,7 @@ export class SearchPage extends React.Component {
 						</div>
 		        <SearchBox
 		          autofocus={true}
-							placeholder="Search plan names, metal levels, types, issuers..."
+							placeholder="Search plan name, metal level, type, issuer..."
 		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuer^5"]}/>
 		      </TopBar>
 		      <LayoutBody>
@@ -91,7 +91,7 @@ export class SearchPage extends React.Component {
 							/>
 							<RangeFilter
 								id="premiums_median"
-								title="Average Monthly Premiums ($)"
+								title="Average Premiums ($)"
 								field="premiums_median"
 								min={0}
 								max={800}
@@ -112,8 +112,8 @@ export class SearchPage extends React.Component {
 								listComponent={ItemHistogramList}
 							/>
 							<RefinementListFilter
-					            id="issuers"
-					            title="Issuers"
+					            id="issuer"
+					            title="Issuer"
 					            field="issuer.raw"
 					            operator="OR"
 								exclude=""
@@ -133,7 +133,7 @@ export class SearchPage extends React.Component {
 		              <HitsStats/>
 									<SortingSelector options={[
 										{label:"Relevance", field:"_score", order:"desc", defaultOption:true},
-										{label:"Premiums", field:"premiums_median", order:"asc", defaultOption:true}
+										{label:"Premium", field:"premiums_median", order:"asc", defaultOption:true}
 									]}/>
 		            </ActionBarRow>
 		            <ActionBarRow>

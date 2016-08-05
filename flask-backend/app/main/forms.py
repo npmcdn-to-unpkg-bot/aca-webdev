@@ -1,6 +1,6 @@
 from flask_wtf import Form
 from wtforms import FloatField, IntegerField, SelectField, StringField, SubmitField
-from wtforms.validators import InputRequired, Length, NumberRange, Optional
+from wtforms.validators import InputRequired, Length, NumberRange, Optional, Regexp
 
 us_mapping = [('AK', u'Alaska'), ('AL', u'Alabama'), ('AR', u'Arkansas'), ('AZ', u'Arizona'), ('DE', u'Delaware'),
 ('FL', u'Florida'), ('GA', u'Georgia'), ('HI', u'Hawaii'), ('IA', u'Iowa'), ('IL', u'Illinois'), ('IN', u'Indiana'),
@@ -12,8 +12,8 @@ us_mapping = [('AK', u'Alaska'), ('AL', u'Alabama'), ('AR', u'Arkansas'), ('AZ',
 
 class InputForm(Form):
     state = SelectField('Select your state:', choices=us_mapping, validators =[ InputRequired()])
-    age = IntegerField('Enter your age:', validators =[ InputRequired(), NumberRange(min=1, max=130) ])
-    zipcode = StringField('Enter your zipcode:', validators =[ InputRequired(), Length(min=5, max=5)] )
+    age = IntegerField('Enter your age:', validators =[ InputRequired(), NumberRange(min=18, max=130) ])
+    zipcode = StringField('Enter your 5-digit zip code:', validators =[ InputRequired(), Regexp('\d{5}', message="Please enter a 5-digit zip code.")] )
     health = StringField('List any health conditions (e.g. high blood pressure, diabetes, or none):', validators =[ InputRequired()])
     income = FloatField('[Optional] Enter your annual household income for subsidy calculation:', validators =[ Optional(), NumberRange(min=0) ])
     hhsize = IntegerField('[Optional] Enter the size of your household for subsidy calculation:', validators =[ Optional(), NumberRange(min=1) ])

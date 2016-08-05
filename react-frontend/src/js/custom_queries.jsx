@@ -31,7 +31,7 @@ export const generateRescore = (query_weights) => {
 		}
 	)
 	const rescore_query = {
-		 "window_size" : 100,
+		 "window_size" : 1000,
 		 "query" : {
 			"score_mode": "total",
 			"rescore_query" : {

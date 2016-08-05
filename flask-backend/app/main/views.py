@@ -1,6 +1,7 @@
 from flask import abort, jsonify, redirect, render_template, request, session, url_for
 from . import main
 from aca_subsidycalc import CalcAcaSubsidy
+from coordinates import get_coordinates
 from database import get_db, log_query, log_click, log_ranks
 from forms import InputForm
 from letor_get_weights import get_weights
@@ -59,3 +60,12 @@ def _ranks():
     plan_score = request.form['plan_score']
     log_ranks(session['session_id'], plan_id, plan_score)
     return jsonify({'status': 'OK'}), 201
+
+@main.route('/providers_map')
+def providers_map():
+    if ('session_id' not in session):
+        abort(400)
+    center, provider_array = get_coordinates(plan_id=request.args.get("plan_id"), zipcode=session['zipcode'], state=session['state'])
+    response= dict(center=center,
+                   provider_array = provider_array)
+    return render_template('providers_map.html', response=response)
