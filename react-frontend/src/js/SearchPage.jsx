@@ -64,7 +64,7 @@ export class SearchPage extends React.Component {
 						</div>
 		        <SearchBox
 		          autofocus={true}
-							placeholder="Search plan name, metal level, type, issuer..."
+							placeholder="Search plan name, issuer, type, metal level..."
 		          queryFields={["plan_name^5", "level^2", "plan_type^2", "issuer^5"]}/>
 		      </TopBar>
 		      <LayoutBody>

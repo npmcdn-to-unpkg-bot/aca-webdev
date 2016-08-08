@@ -22,3 +22,10 @@ CREATE TABLE Ranks (
   plan_score REAL,
   created_ranks TIMESTAMP WITHOUT TIME ZONE DEFAULT (NOW() AT TIME ZONE 'UTC')
 );
+
+DROP TABLE IF EXISTS ZipToCoord;
+CREATE TABLE ZipToCoord (
+  zipcode CHAR(5),
+  lat DOUBLE PRECISION,
+  lon DOUBLE PRECISION
+);

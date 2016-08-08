@@ -58,6 +58,7 @@ export const PlanHitsGridItem = (props)=> {
       <ul style={{marginTop: 8, marginBottom: 8, marginLeft: 0, paddingLeft: 0, listStyle: 'none' }}>
         <li>Plan: <span className={'hits-details'}> { plan_name } </span></li>
         <li>Issuer: <span className={'hits-details'}> { issuer } </span></li>
+        <li>Type: <span className={'hits-details'}> { plan_type } </span></li>
         <li>Score: <span className={'hits-details'}> { result._score } </span></li>
         <li>Level: <span className={'hits-details'}> { level } </span></li>
         <li><a href={ "providers_map?plan_id=" + encodeURIComponent(result._id) } target="_blank" className={ "link" }>

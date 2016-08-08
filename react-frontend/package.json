@@ -1,7 +1,7 @@
 {
-  "name": "webpack-searchkit-es6-boilerplate",
+  "name": "webpack-searchkit-semantic-health",
   "version": "0.1.1",
-  "description": "Example searchkit project using webpack & es6",
+  "description": "semantic health searchkit project using webpack & es6",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot"

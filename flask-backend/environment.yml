@@ -16,8 +16,6 @@ dependencies:
 - python=2.7.11=0
 - readline=6.2=2
 - requests=2.10.0=py27_0
-- scikit-learn=0.17.1=np111py27_2
-- scipy=0.17.1=np111py27_1
 - setuptools=22.0.5=py27_0
 - sqlalchemy=1.0.13=py27_0
 - sqlite=3.13.0=0
@@ -29,9 +27,6 @@ dependencies:
   - alembic==0.8.6
   - blinker==1.4
   - dominate==2.2.0
-  - elasticsearch==2.3.0
-  - elasticsearch-dsl==2.0.0
-  - fake-factory==0.5.7
   - flask-bootstrap==3.3.5.7
   - flask-mail==0.9.1
   - flask-migrate==1.8.0
@@ -42,8 +37,11 @@ dependencies:
   - ipaddress==1.0.16
   - jellyfish==0.5.1
   - mako==1.0.4
+  - pandas==0.18.1
+  - pymongo==3.3.0
   - python-dateutil==2.5.3
   - python-editor==1.0
+  - pytz==2016.6.1
   - six==1.10.0
   - urllib3==1.15.1
   - us==0.9.1
