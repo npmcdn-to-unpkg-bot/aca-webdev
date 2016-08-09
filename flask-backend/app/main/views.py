@@ -41,7 +41,8 @@ def index():
 def results():
     response = dict(user_state=session['state'],
                     query_weights=session['query_weights'],
-                    premium_cap=session['premium_cap'])
+                    premium_cap=session['premium_cap'],
+                    health=session['health'])
     return render_template('results.html', response=response)
 
 @main.route('/_clicks', methods=['POST'])

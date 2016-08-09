@@ -19,7 +19,7 @@ const host = "http://169.45.104.77:80/plans/plan"
 const searchkit = new SearchkitManager(host)
 
 try {
-	var { user_state, query_weights, premium_cap } = window.user_input
+	var { user_state, query_weights, premium_cap, health } = window.user_input
 
 	searchkit.addDefaultQuery( (query) => {
 		 return query.addFilter("state",
@@ -124,7 +124,7 @@ export class SearchPage extends React.Component {
 		          <ActionBar>
 								<ActionBarRow>
 									<div className = {'hits-details show-query'}>
-										Showing Plans for {user_state}.&nbsp;
+										Showing Plans for {user_state}, tailored to {health}.&nbsp;
 										<span style={ {display: display_cap_yes} }>Your monthly insurance cost is capped at ${premium_cap}. </span>
 										<span style={ {display: display_cap_no} }>You do not qualify for a subsidy, or you did not enter your income. </span>
 									</div>
