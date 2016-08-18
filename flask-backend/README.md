@@ -1,5 +1,13 @@
-# Flask Backend
+# Flask Web Server
+## Implementation Details
+### Routes
 
+- `/`: Home. Validates form and records input in a PostgreSQL server. Vectorizes health condition input. Calculates premium cap.
+- `/results`: Results. Passes on several variables as global variables so the frontend JavaScript framework can use them.
+- `/_clicks` and `/_ranks`: Clicks and ranks endpoint. Frontend sends a POST request here, which records the clicks or the plans displayed to the user. The data is used for learn-to-rank training.
+- `/providers_map`: Provider map. Queries the MongoDB database and finds the closest providers.
+
+## Sample Setup
 ### Elasticsearch
 Set up elasticsearch on an AWS EC2 instance:
 
@@ -42,7 +50,7 @@ Paste the following settings into `config/elasticsearch.yml`:
           indices: ["<no-index>", "data"] # index aliases are taken in account!
 
 
-### Load data
+### Load simulated data
 
 Load the data into elasticsearch first using `simulate_plans_data.ipynb`.  
 
@@ -59,4 +67,4 @@ Initiate and create environment:
 
 Set environment variables: `FLASK_CONFIG`, `SECRET_KEY`, `RDS_DB_NAME`, `RDS_USERNAME`, `RDS_PASSWORD`, `RDS_HOSTNAME`  
 
-Add RDS's security group to EB
+Add RDS's security group to EB. Use `eb deploy` to update environment.

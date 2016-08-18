@@ -1,8 +1,9 @@
-from flask import abort, jsonify, redirect, render_template, request, session, url_for
+from flask import abort, current_app, jsonify, redirect, render_template, request, session, url_for
 from . import main
 from aca_subsidycalc import CalcAcaSubsidy
 from coordinates import get_coordinates
 from database import get_db, log_query, log_click, log_ranks
+from fb_handler import send_message
 from forms import InputForm
 from letor_get_weights import get_weights
 from uuid import uuid4
@@ -70,3 +71,29 @@ def providers_map():
     response= dict(center=center,
                    provider_array = provider_array)
     return render_template('providers_map.html', response=response)
+
+@main.route('/webhook', methods=['GET'])
+def verify():
+    if request.args.get("hub.mode") == "subscribe" and request.args.get("hub.verify_token") == current_app.config['FB_VERIFY_TOKEN']:
+        return request.args["hub.challenge"], 200
+    else:
+        return "Failed validation. Make sure the validation tokens match.", 403
+
+@main.route('/webhook', methods=['POST'])
+def webhook():
+    data = request.get_json()
+    if data['object'] == 'page':
+        for entry in data['entry']:
+            for messaging_event in entry['messaging']:
+                if messaging_event.get("message"):
+                    sender_id = messaging_event["sender"]["id"]
+                    recipient_id = messaging_event["recipient"]["id"]
+                    message_text = messaging_event["message"]["text"]
+                    send_message(sender_id, message_text)
+                if messaging_event.get("delivery"):
+                    pass
+                if messaging_event.get("optin"):
+                    pass
+                if messaging_event.get("postback"):
+                    pass
+    return "OK", 200
